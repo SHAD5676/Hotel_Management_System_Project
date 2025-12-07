@@ -1,3 +1,12 @@
+<?php
+include_once('db_config.php');
+session_start();
+if(isset($_SESSION['username'])){
+  header('location:dashboard.php');
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -68,14 +77,12 @@
           $sql = "SELECT * FROM users WHERE username = '$email' AND password = '$password'";
           $rawdata = $conn ->query($sql);
           if($rawdata->num_rows){
+            $_SESSION['username'] = $email;
             header("location:dashboard.php");
 
           }
 
         }
-
-
-
 
         ?>
         <div class="social-auth-links text-center mb-3">
