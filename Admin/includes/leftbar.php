@@ -37,7 +37,13 @@
                 Dashboard
                 <i class="right fas fa-angle-left"></i>
               </p>
-           
+          </li>
+          <li>
+            <a href="services.php">All Services</a>
+          </li>
+          <li>
+            <a href="service_new.php">New Service</a>
+          </li>
              
             </ul>
    
