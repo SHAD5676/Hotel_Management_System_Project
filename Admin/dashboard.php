@@ -1,7 +1,7 @@
 <?php
 include_once('db_config.php');
 session_start();
-if(isset($_SESSION['username'])){
+if(!isset($_SESSION['username'])){
   header('location:index.php');
 }
 
@@ -36,7 +36,6 @@ if(isset($_SESSION['username'])){
   <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
 </head>
 
-
 <body class="hold-transition sidebar-mini layout-fixed">
 
 <?php include ("includes/navbar.php"); 
@@ -70,8 +69,8 @@ if(isset($_SESSION['username'])){
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard v1</li>
+              <li class="breadcrumb-item"><a href="#"></a></li>
+              <!--<li class="breadcrumb-item active">Dashboard v1</li> -->
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -667,10 +666,8 @@ if(isset($_SESSION['username'])){
   <!-- /.content-wrapper -->
    <!--footer-->
 
-
    <?php include ("includes/footer.php"); ?>
   
-
    <!--footer-->
 
   <!-- Control Sidebar -->

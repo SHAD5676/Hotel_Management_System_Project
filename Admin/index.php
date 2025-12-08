@@ -4,12 +4,10 @@ session_start();
 if(isset($_SESSION['username'])){
   header('location:dashboard.php');
 }
-
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -68,8 +66,8 @@ if(isset($_SESSION['username'])){
             <!-- /.col -->
           </div>
         </form>
-        <?php
 
+        <?php
         if(isset($_REQUEST['submit'])) {
           extract($_REQUEST);
           $password = md5($password);
@@ -81,10 +79,9 @@ if(isset($_SESSION['username'])){
             header("location:dashboard.php");
 
           }
-
         }
-
         ?>
+        
         <div class="social-auth-links text-center mb-3">
           <p>- OR -</p>
           <a href="#" class="btn btn-block btn-primary">
