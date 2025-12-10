@@ -38,6 +38,12 @@
           </a>
         </li>
         <li class="nav-item">
+          <a href="room_categories.php" class="nav-link">
+            <i class="nav-icon fas fa-layer-group"></i>
+            <p>Room Categories</p>
+          </a>
+        </li>
+        <li class="nav-item">
           <a href="booking.php" class="nav-link">
             <i class="nav-icon fas fa-calendar-alt"></i>
             <p>Bookings</p>

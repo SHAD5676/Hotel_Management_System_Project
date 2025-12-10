@@ -3,29 +3,25 @@ include_once('db_config.php');
 session_start();
 if (!isset($_SESSION['username'])) {
   header('location:index.php');
-  exit;
 }
 
-// Handle form submission
 if (isset($_POST['submit'])) {
-  $room_number = $_POST['room_number'];
-  $category_id = $_POST['category_id'];
-  $status = $_POST['status'];
+  // Sanitize inputs
+  $room_number = $conn->real_escape_string($_POST['room_number']);
+  $category_id = $conn->real_escape_string($_POST['category_id']);
+  $status = $conn->real_escape_string($_POST['status']);
 
-  // Basic validation
-  if (!empty($room_number) && !empty($category_id) && !empty($status)) {
-    $stmt = $conn->prepare("INSERT INTO rooms (room_number, category_id, status) VALUES (?, ?, ?)");
-    $stmt->bind_param("sis", $room_number, $category_id, $status);
+  // Generate a room_id (you can adjust the format as needed)
 
-    if ($stmt->execute()) {
-      $success = "Room added successfully!";
-    } else {
-      $error = "Error: " . $stmt->error;
-    }
 
-    $stmt->close();
+  // Insert into database
+  $sql = "INSERT INTO rooms ( room_number, category_id, status) 
+            VALUES ('$room_number', '$category_id', '$status')";
+
+  if ($conn->query($sql)) {
+    echo "<div class='alert alert-success'>Room added successfully!</div>";
   } else {
-    $error = "All fields are required.";
+    echo "<div class='alert alert-danger'>Error: " . $conn->error . "</div>";
   }
 }
 ?>
@@ -52,6 +48,13 @@ if (isset($_POST['submit'])) {
 
   <div class="wrapper">
 
+    <!-- Display success/error -->
+    <?php if (isset($success)) { ?>
+      <div class="alert alert-success"><?= $success ?></div>
+    <?php } elseif (isset($error)) { ?>
+      <div class="alert alert-danger"><?= $error ?></div>
+    <?php } ?>
+
     <!-- Navbar -->
     <?php include("includes/navbar.php"); ?>
 
@@ -76,68 +79,66 @@ if (isset($_POST['submit'])) {
       <section class="content">
         <div class="container-fluid">
 
-          <!-- Display success/error -->
-          <?php if (isset($success)) { ?>
-            <div class="alert alert-success"><?= $success ?></div>
-          <?php } elseif (isset($error)) { ?>
-            <div class="alert alert-danger"><?= $error ?></div>
-          <?php } ?>
 
           <div class="card card-primary">
             <div class="card-header">
               <h3 class="card-title">Room Details</h3>
             </div>
 
-              <!-- form start -->
-              <form method="post">
-                <div class="card-body">
-                  <div class="form-group">
-                    <label for="room_number">Room Number</label>
-                    <input type="text" class="form-control" id="room_number" name="room_number" placeholder="Enter room number" required>
-                  </div>
 
-                  <div class="form-group">
-                    <label for="category_id">Category</label>
-                    <select class="form-control" id="category_id" name="category_id" required>
-                      <option value="" disabled selected>Select Category</option>
-                      <option value="Single">Single</option>
-                      <option value="Double">Double</option>
-                      <option value="Deluxe">Deluxe</option>
-                      <option value="Suite">Suite</option>
-                    </select>
-                  </div>
 
-                  <div class="form-group">
-                    <label for="status">Status</label>
-                    <select class="form-control" id="status" name="status" required>
-                      <option value="" disabled selected>Select Status</option>
-                      <option value="Available">Available</option>
-                      <option value="Occupied">Occupied</option>
-                      <option value="Maintenance">Maintenance</option>
-                    </select>
-                  </div>
+            <!-- form start -->
+            <form method="post">
+              <div class="card-body">
+                <div class="form-group">
+                  <label for="room_number">Room Number</label>
+                  <input type="text" class="form-control" id="room_number" name="room_number" placeholder="Enter room number" required>
                 </div>
-                <!-- /.card-body -->
 
-                <div class="card-footer">
-                  <button type="submit" name="submit" class="btn btn-primary">Add Room</button>
+                <div class="form-group">
+                  <label for="category_id">Category</label>
+                  <select class="form-control" id="category_id" name="category_id" required>
+                    <option value="" disabled selected>Select Category</option>
+                    <?php
+                    // Fetch categories from the database
+                    $cat_res = $conn->query("SELECT category_id, category_name FROM room_categories ORDER BY category_name ASC");
+                    while ($cat = $cat_res->fetch_assoc()) {
+                      echo "<option value='{$cat['category_id']}'>{$cat['category_name']}</option>";
+                    }
+                    ?>
+                  </select>
                 </div>
-              </form>
-            </div>
 
+                <div class="form-group">
+                  <label for="status">Status</label>
+                  <select class="form-control" id="status" name="status" required>
+                    <option value="" disabled selected>Select Status</option>
+                    <option value="Available">Available</option>
+                    <option value="Occupied">Occupied</option>
+                    <option value="Maintenance">Maintenance</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="card-footer">
+                <button type="submit" name="submit" class="btn btn-primary">Add Room</button>
+              </div>
+            </form>
           </div>
 
         </div>
-      </section>
 
     </div>
-    <!-- /.content-wrapper -->
+    </section>
 
-    <!-- Footer -->
-    <?php include("includes/footer.php"); ?>
+  </div>
+  <!-- /.content-wrapper -->
 
-    <!-- Control Sidebar -->
-    <aside class="control-sidebar control-sidebar-dark"></aside>
+  <!-- Footer -->
+  <?php include("includes/footer.php"); ?>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark"></aside>
 
   </div>
   <!-- ./wrapper -->
