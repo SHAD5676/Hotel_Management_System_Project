@@ -9,8 +9,7 @@
     <div class="sidebar">
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-       
-        
+         
       </div>
 
       <!-- SidebarSearch Form -->
@@ -32,17 +31,41 @@
                with font-awesome or any other icon font library -->
           <li class="nav-item menu-open">
             <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
+             
+              <i class="far fa-circle nav-icon"></i>
               <p>
                 Dashboard
                 <i class="right fas fa-angle-left"></i>
               </p>
           </li>
+         
           <li>
-            <a href="services.php">All Services</a>
+           <i class="nav-icon fas fa-th"></i>
+            <a href="room.php">Rooms</a>
+          </li>
+           <li>
+            <a href="booking.php">Bookings</a>
+          </li>
+           <li>
+            <a href="payment.php">Payments/Bills</a>
           </li>
           <li>
+            <a href="customer.php">Customers</a>
+          </li>
+          <li>
+            <a href="check.php">Check-in/Check-out</a>
+          </li>
+           <li>
+            <a href="feedback.php">Feedbacks/Reports</a>
+          </li>
+          <li>
+            <a href="stuff.php">Users/Stuffs</a>
+          </li>
+           <li>
             <a href="service_new.php">New Service</a>
+          </li>
+           <li>
+            <a href="services.php">All Services</a>
           </li>
              
             </ul>
