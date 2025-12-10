@@ -1,0 +1,28 @@
+    <li>
+           <i class="nav-icon fas fa-th"></i>
+            <a href="room.php">Rooms</a>
+          </li>
+           <li>
+            <a href="booking.php">Bookings</a>
+          </li>
+           <li>
+            <a href="payment.php">Payments/Bills</a>
+          </li>
+          <li>
+            <a href="customer.php">Customers</a>
+          </li>
+          <li>
+            <a href="check.php">Check-in/Check-out</a>
+          </li>
+           <li>
+            <a href="feedback.php">Feedbacks/Reports</a>
+          </li>
+          <li>
+            <a href="stuff.php">Users/Stuffs</a>
+          </li>
+           <li>
+            <a href="service_new.php">New Service</a>
+          </li>
+           <li>
+            <a href="services.php">All Services</a>
+          </li>
