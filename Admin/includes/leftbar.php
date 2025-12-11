@@ -81,30 +81,33 @@
         </li>
 
         <!-- Services with submenu -->
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-concierge-bell"></i>
-            <p>
-              Services
-              <i class="right fas fa-angle-left"></i>
-            </p>
-          </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item">
-              <a href="service_new.php" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>New Service</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="services.php" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>All Services</p>
-              </a>
-            </li>
-          </ul>
-        </li>
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-chart-pie"></i>
+              <p>
+                Services
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="service_new.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>New Services</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="all_service.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>All Services</p>
+                </a>
+              </li>
 
+
+            </ul>
+          </li>
+        </ul>
       </ul>
     </nav>
     <!-- /.sidebar-menu -->
