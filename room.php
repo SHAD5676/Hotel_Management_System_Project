@@ -31,7 +31,7 @@
                         <div class="row align-items-center">
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo">
-                                    <a href="index.html"><img src="img/logo/logo.png" alt="logo"></a>
+                                    <a href="index.php"><img src="img/logo/logo.png" alt="logo"></a>
                                 </div>
                             </div>
                            <div class="col-xl-8 col-lg-8">
@@ -40,52 +40,52 @@
                                     <nav id="mobile-menu">
                                           <ul>
                                             <li class="has-sub">
-                                                <a href="index.html">Home</a>
+                                                <a href="index.php">Home</a>
                                                 <ul>													
-													<li><a href="index.html">Home Page 01</a></li>
-													<li><a href="index-2.html">Home Page 02</a></li>	
+													<li><a href="index.php">Home Page 01</a></li>
+													<li><a href="index-2.php">Home Page 02</a></li>	
 												</ul>
                                             </li>
-                                            <li><a href="about.html">About</a></li>        
+                                            <li><a href="about.php">About</a></li>        
                                             <li class="has-sub">
-                                                <a href="room.html">our rooms</a>
+                                                <a href="room.php">our rooms</a>
                                                 <ul>													
-													<li> <a href="room.html">Our Rooms</a></li>
-                                                    <li> <a href="single-rooms.html">Rooms Details</a></li>
+													<li> <a href="room.php">Our Rooms</a></li>
+                                                    <li> <a href="single-rooms.php">Rooms Details</a></li>
 												</ul>
                                             </li>     
                                             <li class="has-sub">
-                                                <a href="services.html">Facilities</a>
+                                                <a href="services.php">Facilities</a>
                                                 <ul>													
-													<li> <a href="services.html">Services</a></li>
-                                                    <li> <a href="single-service.html">Services Details</a></li>
+													<li> <a href="services.php">Services</a></li>
+                                                    <li> <a href="single-service.php">Services Details</a></li>
 												</ul>
                                             </li>  
                                               <li class="has-sub"><a href="#">Pages</a>
 												<ul>
-                                                    <li><a href="projects.html">Gallery</a></li>
-                                                    <li><a href="faq.html">Faq</a></li>
-                                                    <li><a href="team.html">Team</a></li>
-                                                    <li><a href="team-single.html">Team Details</a></li>
-                                                    <li><a href="pricing.html">Pricing</a></li>
-                                                    <li><a href="shop.html">Shop</a></li>
-													<li><a href="shop-details.html">Shop Details</a>
+                                                    <li><a href="projects.php">Gallery</a></li>
+                                                    <li><a href="faq.php">Faq</a></li>
+                                                    <li><a href="team.php">Team</a></li>
+                                                    <li><a href="team-single.php">Team Details</a></li>
+                                                    <li><a href="pricing.php">Pricing</a></li>
+                                                    <li><a href="shop.php">Shop</a></li>
+													<li><a href="shop-details.php">Shop Details</a>
                                                   </ul>
 											</li>
                                             <li class="has-sub"> 
-                                                <a href="blog.html">Blog</a>
+                                                <a href="blog.php">Blog</a>
                                                 <ul>
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="blog-details.html">Blog Details</a></li>
+                                                    <li><a href="blog.php">Blog</a></li>
+                                                    <li><a href="blog-details.php">Blog Details</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="contact.html">Contact</a></li>                                               
+                                            <li><a href="contact.php">Contact</a></li>                                               
                                         </ul>
                                     </nav>
                                 </div>
                             </div>   
                              <div class="col-xl-2 col-lg-2 d-none d-lg-block">
-                                 <a href="contact.html" class="top-btn mt-10 mb-10">reservation </a>
+                                 <a href="contact.php" class="top-btn mt-10 mb-10">reservation </a>
                             </div>
                             
                                 <div class="col-12">
@@ -100,21 +100,20 @@
         
         <!-- main-area -->
         <main>
-            
-            <!-- breadcrumb-area -->
+       <!-- breadcrumb-area -->
             <section class="breadcrumb-area d-flex align-items-center" style="background-image:url(img/bg/bdrc-bg.jpg)">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-xl-12 col-lg-12">
                             <div class="breadcrumb-wrap text-center">
                                 <div class="breadcrumb-title">
-                                    <h2>About</h2>    
+                                    <h2>Our Menu</h2>    
                                     <div class="breadcrumb-wrap">
                               
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">About</li>
+                                        <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Our Room</li>
                                     </ol>
                                 </nav>
                             </div>
@@ -126,154 +125,115 @@
                 </div>
             </section>
             <!-- breadcrumb-area-end -->
-            <!-- about-area -->
-            <section class="about-area about-p pt-120 pb-120 p-relative fix">              
+			   
+              <!-- booking-area -->
+            <section class="booking pb-120 p-relative fix">
                 <div class="container">
-                    <div class="row justify-content-center align-items-center">
-                         <div class="col-lg-6 col-md-12 col-sm-12">
-                            <div class="p-relative  wow fadeInLeft animated" data-animation="fadeInLeft" data-delay=".4s">
-                                <img src="img/features/feature.png" alt="img">  
+                    <div class="row align-items-center">
+                         <div class="col-lg-6 col-md-12">
+                             <div class="booking-img">
+                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29206.385472608883!2d90.38979257534984!3d23.7901999331318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7a0f70deb73%3A0x30c36498f90fe23!2sGulshan%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1765636404950!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                 <div class="text">
+                                    <h3>Seasonal or <span>Citywide Events</span></h3>
+                                     <p>What big annual or seasonal events are can’t-miss?</p>
+                                 </div>
                             </div>
                         </div>
-                        
-					<div class="col-lg-6 col-md-12 col-sm-12">
-                            <div class="about-content s-about-content  wow fadeInRight  animated pl-60" data-animation="fadeInRight" data-delay=".4s">
-                                <div class="section-title second-title pb-25">  
-                                    <h5>About Us</h5>
-                                    <h2>Most Safe & Rated Hotel <span>In London.</span></h2>                                   
-                                </div>
-                                   <p>Morbi tortor urna, placerat vel arcu quis, fringilla egestas neque. Morbi sit amet porta erat, quis rutrum risus. Vivamus et gravida nibh, quis posuere felis. In commodo mi lectus, Integer ligula lorem, finibus vitae lorem vitae tincidunt dolor consequat quis.</p>
-                                   
-                                    <div class="about-content3 mt-30">
-                                    <div class="row justify-content-center align-items-center">
-                                    <div class="col-md-12">
-                                         <ul class="green mb-30">                                              
-                                                    <li> 24 Month / 24,000km Nationwide Warranty monotone</li>
-                                                    <li> Curabitur dapibus nisl a urna congue, in pharetra urna accumsan.</li>     
-                                                    <li> Customer Rewards Program and excellent technology</li>
-                                               </ul>
-                                        </div>                                         
+                        <div class="col-lg-6 col-md-12">
+                             <div class="contact-bg02 pl-40 pr-30">
+                                <div class="section-title center-align">
+                                    <h2>
+                                      Book Your <span>Seat</span>
+                                    </h2>
+                                </div>                                
+                                <form action="mail.php" method="post" class="contact-form mt-30">
+                                    <div class="row">
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="contact-field p-relative c-name mb-20">                                    
+                                           <label>Check In Date</label>
+                                            <input type="date" id="chackin2" name="date">
+                                        </div>                               
                                     </div>
+
+                                     <div class="col-lg-12 col-md-12">
+                                        <div class="contact-field p-relative c-subject mb-20">                                   
+                                           <label>Check Out Date</label>
+                                            <input type="date" id="chackout2" name="date">
+                                        </div>
+                                    </div>		
+                                     <div class="col-lg-12 col-md-12">
+                                        <div class="contact-field p-relative c-subject mb-20">                                   
+                                             <label>Adults</label>
+                                                <select name="adults" id="adu2">
+                                                  <option value="sports-massage">Adults</option>
+                                                  <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select>
+                                        </div>
+                                    </div>	
+                                     <div class="col-lg-12 col-md-12">
+                                        <div class="contact-field p-relative c-option mb-20">                                   
+                                            <label>Room</label>
+                                               <select name="room" id="rm2">
+                                                  <option value="sports-massage">Room</option>
+                                                  <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="slider-btn mt-30">                                          
+                                                    <button class="btn active" data-animation="fadeInRight" data-delay=".8s"><span>Book Table Now</span></button>				
+                                                </div>                             
+                                    </div>
+                                    </div>
+                            </form>                            
+                            </div>  
+                                             
+                        </div>
+                       
+                    </div>
+                </div>
+            </section>
+            <!-- booking-area-end -->	
+             <!-- feature-area -->
+            <section class="feature-area2 p-relative fix" style="background: #2C45490F;">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center">
+                         <div class="col-lg-6 col-md-12 col-sm-12 pr-30">
+                           <div class="feature-img">                               
+                                  <img src="img/features/feature.png" alt="img" class="img">              
                                 </div>
+                        </div>
+					   <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="feature-content s-about-content pl-60">
+                                <div class="section-title pb-20">                               
+                                    <h5>Luxury Hotel& Resort</h5>
+                                <h2>
+                                    Pearl Of  <span>The Adriatic.</span>
+                                </h2>                             
+                                </div>
+                                <p>Vestibulum non ornare nunc. Maecenas a metus in est iaculis pretium. Aliquam ullamcorper nibh lacus, ac suscipit ipsum consequat porttitor.Aenean vehicula ligula eu rhoncus porttitor. Duis vel lacinia quam. Nunc rutrum porta ex, in imperdiet tortor feugiat at.</p>
+                                <p>Cras finibus laoreet felis et hendrerit. Integer ligula lorem, finibus vitae lorem at, egestas consectetur urna. Integer id ultricies elit. Maecenas sodales nibh, quis posuere felis. In commodo mi lectus venenatis metus eget fringilla. Suspendisse varius ante eget.</p>
+                                <div class="slider-btn mt-15">                                          
+                                                 <a href="about.html" class="btn ss-btn smoth-scroll">Discover More</a>				
+                                            </div>
                                 
                             </div>
                         </div>
+                       
                      
                     </div>
                 </div>
             </section>
-            <!-- about-area-end -->
-             <!-- counter-area -->
-            <div class="counter-area p-relative wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s">
-                <div class="container">
-               
-                    <div class="row p-relative align-items-center">
-                         <div class="col-lg-4 col-md-6 col-sm-12">
-                             <div class="single-counter text-center">
-                                <div class="counter p-relative">                                   
-                                    <div class="text">
-                                          <span class="count">90</span><span>K</span>                               
-                                        <p>Guest Have Stayed at Our Hotel</p>
-                                    </div>
-                                    
-                                </div>
-                               
-                            </div>
-                        </div>
-                      <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="single-counter text-center">
-                                <div class="counter p-relative">                                   
-                                    <div class="text">
-                                          <span class="count">152</span><span>+</span>                               
-                                        <p>Guest Have Stayed at Our Hotel</p>
-                                    </div>
-                                    
-                                </div>
-                               
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                              <div class="single-counter text-center">
-                                    <div class="counter p-relative">                                
-                                    <div class="text">
-                                        <span class="count">221</span><span>+</span>     
-                                          <p>Our Luxurious Services Rooms</p>
-                                    </div>
-                                    
-                                </div>
-                                
-                              
-                            </div>
-                        </div>                        
-                    </div>
-                </div>
-            </div>
-            <!-- counter-area-end -->	
-             <!-- about-area -->
-            <section class="about-area about-p pt-120 pb-120 fix p-relative">
-                <div class="scrollbox2">
-                    <div class="scrollbox scrollbox--secondary scrollbox--reverse">
-                     <div class="scrollbox__item"> <div class="section-t"><h2>luxury Hotel / Quality Living In DaHotel</h2></div></div>
-                     <div class="scrollbox__item"> <div class="section-t"><h2>luxury Hotel / Quality Living In DaHotel</h2></div></div>
-                     <div class="scrollbox__item"> <div class="section-t"><h2>luxury Hotel / Quality Living In DaHotel</h2></div></div>
-                    </div>         
-                </div>                 
-                <div class="container">
-                    <div class="row justify-content-center align-items-center">
-                         <div class="col-lg-12 col-md-12 col-sm-12">
-                            <div class="s-about-img p-relative  wow fadeInUp animated" data-animation="fadeInUp" data-delay=".4s">
-                                <a href="https://www.youtube.com/watch?v=gyGsPlt06bo" class="popup-video"> <img src="img/features/about.jpg" alt="img">   </a>
-                               <div class="about-icon">
-                                     <img src="img/features/since.png" alt="img">   
-                                </div>
-                            </div>
-                          
-                        </div> 
-                    </div>
-                </div>
-            </section>
-            <!-- about-area-end -->
-            
-            <!-- feature-area -->
-            <section class="feature-area2 p-relative pt-120 pb-120 fix" style="background: #2C4549;">              
-                <div class="container-fluid">
-                    <div class="row justify-content-center align-items-center">
-                         <div class="col-lg-12 col-md-12 col-sm-12 pr-30">
-                           <div class="feature-slider-active">                               
-                               <div class="feature-slider-box">                                   
-                                    <img src="img/bg/feature-slider-img.png" alt="contact-bg-an-01">
-                                    <div class="text">
-                                        <h2>Minimal Duplex Room /</h2>
-                                    </div>
-                               </div>                          
-                               <div class="feature-slider-box">                                   
-                                    <img src="img/bg/feature-slider-img.png" alt="contact-bg-an-01">
-                                    <div class="text">
-                                        <h2>wifi bed water house /</h2>
-                                    </div>
-                               </div>
-                           
-                               <div class="feature-slider-box">                                   
-                                    <img src="img/bg/feature-slider-img.png" alt="contact-bg-an-01">
-                                    <div class="text">
-                                        <h2>free wifi zone /</h2>
-                                    </div>
-                               </div>
-                             
-                               <div class="feature-slider-box">                                   
-                                    <img src="img/bg/feature-slider-img.png" alt="contact-bg-an-01">
-                                    <div class="text">
-                                        <h2>wifi bed water house /</h2>
-                                    </div>
-                               </div>
-                            </div>
-                        </div>
-					 
-                    </div>
-                </div>
-            </section>
             <!-- feature-area-end -->
-              <!-- testimonial-area -->
+           <!-- testimonial-area -->
             <section class="testimonial-area pt-120 pb-120 p-relative fix" style="background-image: url(img/bg/testimonial-bg.png); background-repeat: no-repeat;background-position: center center;">
                 <div class="container">
                     <div class="row">
@@ -406,7 +366,7 @@
             </section>
             <!-- instagram-area-end -->
             
-               <!-- newslater-area -->
+           <!-- newslater-area -->
             <section class="newslater-area">
                 <div class="container p-relative">
                      <div class="newslater-text">Newsletter</div>
@@ -453,7 +413,7 @@
                                 </div>
                                 <div class="footer-link">
                                     <ul>                                        
-                                        <li><a href="about.html"> Careers</a></li>
+                                        <li><a href="about.php"> Careers</a></li>
                                         <li><a href="#"> Mon- Sat: 9am to 6pm </a></li>                                       
                                     </ul>
                                 </div>
@@ -466,11 +426,11 @@
                                 </div>
                                 <div class="footer-link">
                                     <ul>                                        
-                                        <li><a href="index.html">About us</a></li>
-                                        <li><a href="about.html"> Careers</a></li>
-                                        <li><a href="services.html"> Prices </a></li>
-                                        <li><a href="contact.html"> Services</a></li>
-                                        <li><a href="blog.html">Get In Touch </a></li>
+                                        <li><a href="index.php">About us</a></li>
+                                        <li><a href="about.php"> Careers</a></li>
+                                        <li><a href="services.php"> Prices </a></li>
+                                        <li><a href="contact.php"> Services</a></li>
+                                        <li><a href="blog.php">Get In Touch </a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -482,11 +442,11 @@
                                 </div>
                                 <div class="footer-link">
                                     <ul>                                        
-                                        <li><a href="index.html">Auto production</a></li>
-                                        <li><a href="about.html"> Investors</a></li>
-                                        <li><a href="services.html"> News </a></li>
-                                        <li><a href="contact.html"> FAQ’s</a></li>
-                                        <li><a href="blog.html">Contact us </a></li>
+                                        <li><a href="index.php">Auto production</a></li>
+                                        <li><a href="about.php"> Investors</a></li>
+                                        <li><a href="services.php"> News </a></li>
+                                        <li><a href="contact.php"> FAQ’s</a></li>
+                                        <li><a href="blog.php">Contact us </a></li>
                                     </ul>
                                 </div>
                             </div>

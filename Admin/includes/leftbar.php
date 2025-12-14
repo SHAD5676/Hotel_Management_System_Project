@@ -50,12 +50,6 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="payment.php" class="nav-link">
-            <i class="nav-icon fas fa-file-invoice-dollar"></i>
-            <p>Payments/Bills</p>
-          </a>
-        </li>
-        <li class="nav-item">
           <a href="customer.php" class="nav-link">
             <i class="nav-icon fas fa-users"></i>
             <p>Customers</p>

@@ -23,101 +23,75 @@
         <link rel="stylesheet" href="css/responsive.css">
     </head>
     <body>
-        <!-- header -->
-        <header class="header-area header-three">           	
-			  <div id="header-sticky" class="menu-area">
-                <div class="container-fluid pl-85 pr-85">
-                    <div class="second-menu">
-                        <div class="row align-items-center">
-                            <div class="col-xl-2 col-lg-2">
-                                <div class="logo">
-                                    <a href="index.html"><img src="img/logo/logo.png" alt="logo"></a>
-                                </div>
-                            </div>
-                           <div class="col-xl-8 col-lg-8">
-                              
-                                <div class="main-menu text-center">
-                                    <nav id="mobile-menu">
-                                          <ul>
-                                            <li class="has-sub">
-                                                <a href="index.html">Home</a>
-                                                <ul>													
-													<li><a href="index.html">Home Page 01</a></li>
-													<li><a href="index-2.html">Home Page 02</a></li>	
-												</ul>
-                                            </li>
-                                            <li><a href="about.html">About</a></li>        
-                                            <li class="has-sub">
-                                                <a href="room.html">our rooms</a>
-                                                <ul>													
-													<li> <a href="room.html">Our Rooms</a></li>
-                                                    <li> <a href="single-rooms.html">Rooms Details</a></li>
-												</ul>
-                                            </li>     
-                                            <li class="has-sub">
-                                                <a href="services.html">Facilities</a>
-                                                <ul>													
-													<li> <a href="services.html">Services</a></li>
-                                                    <li> <a href="single-service.html">Services Details</a></li>
-												</ul>
-                                            </li>  
-                                              <li class="has-sub"><a href="#">Pages</a>
-												<ul>
-                                                    <li><a href="projects.html">Gallery</a></li>
-                                                    <li><a href="faq.html">Faq</a></li>
-                                                    <li><a href="team.html">Team</a></li>
-                                                    <li><a href="team-single.html">Team Details</a></li>
-                                                    <li><a href="pricing.html">Pricing</a></li>
-                                                    <li><a href="shop.html">Shop</a></li>
-													<li><a href="shop-details.html">Shop Details</a>
-                                                  </ul>
-											</li>
-                                            <li class="has-sub"> 
-                                                <a href="blog.html">Blog</a>
-                                                <ul>
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="blog-details.html">Blog Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="contact.html">Contact</a></li>                                               
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>   
-                             <div class="col-xl-2 col-lg-2 d-none d-lg-block">
-                                 <a href="contact.html" class="top-btn mt-10 mb-10">reservation </a>
-                            </div>
-                            
-                                <div class="col-12">
-                                    <div class="mobile-menu"></div>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- header-end -->
-        
-        <!-- main-area -->
-        <main>
-           <!-- slider-area -->
+        <div class="container-fluid">
+         <div class="row">
+            <div class="col-xl-2 col-lg-3 pl-0 pr-0">
+                 <!-- header -->
+               <header class="header-slidemenu">
+                  <div class="logo mb-100">
+                     <a href="index.php"><img src="img/logo/logo.png" alt="logo"></a>
+                  </div>
+                  <div class="main-menu slide-out">
+                      <nav id="mobile-menu">
+                          <ul>
+                            <li class="has-sub">
+                                <a href="index.php">Home</a>
+                                <ul>													
+                                   <li><a href="index.php">Home Page 01</a></li>
+                                    <li><a href="index-2.php">Home Page 02</a></li>													
+                                </ul>
+                            </li>
+                            <li><a href="about.php">About</a></li>        
+                            <li class="has-sub">
+                                <a href="room.php">our rooms</a>
+                                <ul>													
+                                    <li> <a href="room.php">Our Rooms</a></li>
+                                    <li> <a href="single-rooms.php">Rooms Details</a></li>
+                                </ul>
+                            </li>     
+                            <li class="has-sub">
+                                <a href="services.php">Facilities</a>
+                                <ul>													
+                                    <li> <a href="services.php">Services</a></li>
+                                    <li> <a href="single-service.php">Services Details</a></li>
+                                </ul>
+                            </li>  
+                              <li class="has-sub"><a href="#">Pages</a>
+                                <ul>
+                                    <li><a href="projects.php">Gallery</a></li>
+                                    <li><a href="faq.php">Faq</a></li>
+                                    <li><a href="team.php">Team</a></li>
+                                    <li><a href="team-single.php">Team Details</a></li>
+                                    <li><a href="pricing.php">Pricing</a></li>
+                                    <li><a href="shop.php">Shop</a></li>
+                                    <li><a href="shop-details.php">Shop Details</a>
+                                  </ul>
+                            </li>
+                            <li class="has-sub"> 
+                                <a href="blog.php">Blog</a>
+                                <ul>
+                                    <li><a href="blog.php">Blog</a></li>
+                                    <li><a href="blog-details.php">Blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.php">Contact</a></li>                                               
+                        </ul>
+                    </nav>
+                  </div>
+                  <div class="mobile-menu"></div>
+                  <div class="footer-social">    
+                     <a href="https://www.facebook.com/zcubetheme">FW</a>
+                     <a href="https://dribbble.com/mdsubhan0786">DR</a>
+                     <a href="https://www.behance.net/mdsubhan53726f">BE</a>
+                     <a href="https://pinterest.com/mdsubhan53/_saved/">PN</a>
+                  </div>
+               </header>
+               <!-- header end -->
+             </div>
+              <div class="col-xl-10 col-lg-9 pl-0 pr-0">
+              <!-- slider-area -->
             <section id="home" class="slider-area fix p-relative">
-                  <!-- slider-info-area -->
-                <div class="slider-info">                   
-                    <div class="social">
-                        <span>
-                            <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>               
-                            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="#" title="Twitter"><i class="fab fa-youtube"></i></a>
-                       </span>                    
-                       <!--  /social media icon redux -->                               
-                    </div>
-                     <div class="email">
-                      <span class="mr-15">info@dahotel.com</span> +(123) 456 789
-                    </div>
-                </div>
-                <!-- slider-info-area-end -->
+             
                 <div class="slider-active" style="background: #101010;">
 				    <div class="single-slider slider-bg d-flex align-items-center" style="background-image: url(img/slider/slider_bg.jpg); background-size: cover;">
                         <div class="container">
@@ -233,7 +207,7 @@
                                      <img src="img/icon/fe-icon03.png" alt="img">
                                     </div>
                                     <div class="services-08-content">
-                                        <h3><a href="single-service.html">Entertainment</a></h3>
+                                        <h3><a href="single-service.php">Entertainment</a></h3>
                                       <p>Visitors to your city need to eat. In fact, some people visit new towns specifically for the food. Use your insider</p>
                                     </div>
                                 </div>
@@ -244,7 +218,7 @@
                                      <img src="img/icon/fe-icon04.png" alt="img">
                                     </div>
                                     <div class="services-08-content">
-                                        <h3><a href="single-service.html">Pool Area</a></h3>
+                                        <h3><a href="single-service.php">Pool Area</a></h3>
                                         <p>Visitors to your city need to eat. In fact, some people visit new towns specifically for the food. Use your insider</p>
                                     </div>
                                 </div>
@@ -255,7 +229,7 @@
                                    <img src="img/icon/fe-icon05.png" alt="img">
                                     </div>
                                     <div class="services-08-content">
-                                        <h3><a href="single-service.html">Cocktail Bar</a></h3>
+                                        <h3><a href="single-service.php">Cocktail Bar</a></h3>
                                        <p>Visitors to your city need to eat. In fact, some people visit new towns specifically for the food. Use your insider</p>
                                     </div>
                                 </div>
@@ -266,7 +240,7 @@
                                      <img src="img/icon/fe-icon06.png" alt="img">
                                     </div>
                                     <div class="services-08-content">
-                                        <h3><a href="single-service.html">Tour Guide</a></h3>
+                                        <h3><a href="single-service.php">Tour Guide</a></h3>
                                         <p>Visitors to your city need to eat. In fact, some people visit new towns specifically for the food. Use your insider</p>
                                     </div>
                                 </div>
@@ -376,7 +350,7 @@
 									</a>
                                 </div>
                                 <div class="services-content">                                     
-                                    <h4><a href="single-rooms.html">Minimal Duplex Room</a></h4>    
+                                    <h4><a href="single-rooms.php">Minimal Duplex Room</a></h4>    
                                     <p>Visitors to your city need to eat. In fact, some people visit new towns specifically.</p>
                                     <div class="icon">
                                         <ul>
@@ -391,7 +365,7 @@
                                     <div class="day-book">
                                         <ul>
                                             <li>$600/Night</li>
-                                            <li><a href="contact.html">Book Now</a></li>
+                                            <li><a href="contact.php">Book Now</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -405,7 +379,7 @@
 									</a>
                                 </div>
                                 <div class="services-content">                                     
-                                    <h4><a href="single-rooms.html">Superior Double Room</a></h4>    
+                                    <h4><a href="single-rooms.php">Superior Double Room</a></h4>    
                                     <p>Visitors to your city need to eat. In fact, some people visit new towns specifically.</p>
                                     <div class="icon">
                                         <ul>
@@ -420,7 +394,7 @@
                                      <div class="day-book">
                                         <ul>
                                             <li>$400/Night</li>
-                                            <li><a href="contact.html">Book Now</a></li>
+                                            <li><a href="contact.php">Book Now</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -435,7 +409,7 @@
 									</a>
                                 </div>
                                 <div class="services-content">                                    
-                                    <h4><a href="single-rooms.html">Super Balcony Double Room</a></h4>    
+                                    <h4><a href="single-rooms.php">Super Balcony Double Room</a></h4>    
                                    <p>Visitors to your city need to eat. In fact, some people visit new towns specifically.</p>
                                     <div class="icon">
                                         <ul>
@@ -450,7 +424,7 @@
                                      <div class="day-book">
                                         <ul>
                                             <li>$100/Night</li>
-                                            <li><a href="contact.html">Book Now</a></li>
+                                            <li><a href="contact.php">Book Now</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -464,7 +438,7 @@
 									</a>
                                 </div>
                                 <div class="services-content">                                  
-                                    <h4><a href="single-rooms.html">Delux Double Room</a></h4>    
+                                    <h4><a href="single-rooms.php">Delux Double Room</a></h4>    
                                   <p>Visitors to your city need to eat. In fact, some people visit new towns specifically.</p>
                                     <div class="icon">
                                         <ul>
@@ -479,7 +453,7 @@
                                        <div class="day-book">
                                         <ul>
                                             <li>$300/Night</li>
-                                            <li><a href="contact.html">Book Now</a></li>
+                                            <li><a href="contact.php">Book Now</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -566,7 +540,7 @@
                                         </ul>
                                     </div>   
                                     <div class="pricing-btn">
-                                       <a href="contact.html" class="btn active">purchase now</a>
+                                       <a href="contact.php" class="btn active">purchase now</a>
                                     </div>
                                 </div>
                       
@@ -594,7 +568,7 @@
                                         </ul>
                                     </div>   
                                     <div class="pricing-btn">
-                                       <a href="contact.html" class="btn active">purchase now</a>
+                                       <a href="contact.php" class="btn active">purchase now</a>
                                     </div>
                                 </div>
                       
@@ -622,7 +596,7 @@
                                         </ul>
                                     </div>   
                                     <div class="pricing-btn">
-                                       <a href="contact.html" class="btn active">purchase now</a>
+                                       <a href="contact.php" class="btn active">purchase now</a>
                                     </div>
                                 </div>
                       
@@ -753,9 +727,82 @@
                 <div class="container">
                     <div class="row">
                          <div class="col-lg-12">
-                            
+                             <div class="section-title mb-80 text-center">
+                                <h5>testimonials</h5>
+                                  <h2>Happy users <span>says</span></h2>   
+                            </div>
+                           
                         </div>
-                       
+                        <div class="col-lg-12">
+                            <div class="testimonial-active">
+                                <div class="single-testimonial">
+                                    <h3>Best hotel to say</h3>
+                                    <p>“ One of the clearest ways that a hotel can stand out from the competition and wow potential guests. ”</p>
+                                     <div class="testi-author">                                        
+                                        <div class="ta-info">
+                                            <h6>Rosalina William</h6>
+                                            <span>ceo</span>
+                                        </div>
+                                         <img src="img/testimonial/testi_avatar.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="single-testimonial">
+                                    <h3>Best hotel to say</h3>
+                                    <p>“ One of the clearest ways that a hotel can stand out from the competition and wow potential guests. ”</p>
+                                     <div class="testi-author">                                        
+                                        <div class="ta-info">
+                                            <h6>Nelson Helson</h6>
+                                            <span>founder</span>
+                                        </div>
+                                         <img src="img/testimonial/testi_avatar_02.png" alt="img">
+                                    </div>
+                                </div>
+                               <div class="single-testimonial">
+                                    <h3>Best hotel to say</h3>
+                                    <p>“ One of the clearest ways that a hotel can stand out from the competition and wow potential guests. ”</p>
+                                     <div class="testi-author">                                        
+                                        <div class="ta-info">
+                                            <h6>Tromazo Zelson</h6>
+                                            <span>designer</span>
+                                        </div>
+                                         <img src="img/testimonial/testi_avatar_03.png" alt="img">
+                                    </div>
+                                </div>
+                                   <div class="single-testimonial">
+                                    <h3>Best hotel to say</h3>
+                                    <p>“ One of the clearest ways that a hotel can stand out from the competition and wow potential guests. ”</p>
+                                     <div class="testi-author">                                        
+                                        <div class="ta-info">
+                                            <h6>Rosalina William</h6>
+                                            <span>ceo</span>
+                                        </div>
+                                         <img src="img/testimonial/testi_avatar.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="single-testimonial">
+                                    <h3>Best hotel to say</h3>
+                                    <p>“ One of the clearest ways that a hotel can stand out from the competition and wow potential guests. ”</p>
+                                     <div class="testi-author">                                        
+                                        <div class="ta-info">
+                                            <h6>Nelson Helson</h6>
+                                            <span>founder</span>
+                                        </div>
+                                         <img src="img/testimonial/testi_avatar_02.png" alt="img">
+                                    </div>
+                                </div>
+                               <div class="single-testimonial">
+                                    <h3>Best hotel to say</h3>
+                                    <p>“ One of the clearest ways that a hotel can stand out from the competition and wow potential guests. ”</p>
+                                     <div class="testi-author">                                        
+                                        <div class="ta-info">
+                                            <h6>Tromazo Zelson</h6>
+                                            <span>designer</span>
+                                        </div>
+                                         <img src="img/testimonial/testi_avatar_03.png" alt="img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                        
                     </div>
                 </div>
@@ -809,11 +856,12 @@
             <!-- instagram-area-end -->
             
               <!-- blog-area -->
-            <section id="blog" class="blog-area p-relative fix pt-120 pb-90">
+            <section id="blog" class="blog-area p-relative fix pt-90 pb-90">
+                 <div class="animations-02"><img src="img/bg/an-img-06.png" alt="contact-bg-an-05"></div>
                 <div class="container">
                     <div class="row align-items-center"> 
                         <div class="col-lg-12">
-                            <div class="section-title center-align mb-80 text-center wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s">
+                            <div class="section-title center-align mb-50 text-center wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s">
                                  <h5>Our Blog</h5>
                                 <h2>
                                    Company news <span>& insights</span>
@@ -827,7 +875,7 @@
                        <div class="col-lg-4 col-md-6">
                             <div class="single-post2 hover-zoomin mb-30 wow fadeInUp animated" data-animation="fadeInUp" data-delay=".4s">
                                 <div class="blog-thumb2">
-                                    <a href="blog-details.html"><img src="img/blog/inner_b1.jpg" alt="img"></a>
+                                    <a href="blog-details.php"><img src="img/blog/inner_b1.jpg" alt="img"></a>
                                 </div>                    
                                 <div class="blog-content2">                                     
                                     <div class="date-home">
@@ -840,8 +888,8 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <h4><a href="blog-details.html">Cras accumsan nulla nec lacus ultricies placerat.</a></h4>                                    
-                                    <div class="blog-btn"><a href="blog-details.html">Read More</a></div>
+                                    <h4><a href="blog-details.php">Cras accumsan nulla nec lacus ultricies placerat.</a></h4>                                    
+                                    <div class="blog-btn"><a href="blog-details.php">Read More</a></div>
                                      
                                 </div>
                             </div>
@@ -849,7 +897,7 @@
                          <div class="col-lg-4 col-md-6">
                             <div class="single-post2 mb-30 hover-zoomin wow fadeInUp animated" data-animation="fadeInUp" data-delay=".4s">
                                 <div class="blog-thumb2">
-                                    <a href="blog-details.html"><img src="img/blog/inner_b2.jpg" alt="img"></a>
+                                    <a href="blog-details.php"><img src="img/blog/inner_b2.jpg" alt="img"></a>
                                 </div>
                                 <div class="blog-content2">                                    
                                     <div class="date-home">
@@ -862,15 +910,15 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <h4><a href="blog-details.html">Dras accumsan nulla nec lacus ultricies placerat.</a></h4>                                   
-                                    <div class="blog-btn"><a href="blog-details.html">Read More</a></div>
+                                    <h4><a href="blog-details.php">Dras accumsan nulla nec lacus ultricies placerat.</a></h4>                                   
+                                    <div class="blog-btn"><a href="blog-details.php">Read More</a></div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
                             <div class="single-post2 mb-30 hover-zoomin wow fadeInUp animated" data-animation="fadeInUp" data-delay=".4s">
                                 <div class="blog-thumb2">
-                                    <a href="blog-details.html"><img src="img/blog/inner_b3.jpg" alt="img"></a>
+                                    <a href="blog-details.php"><img src="img/blog/inner_b3.jpg" alt="img"></a>
                                 </div>
                                 <div class="blog-content2">                                    
                                     <div class="date-home">
@@ -883,8 +931,8 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <h4><a href="blog-details.html">Seas accumsan nulla nec lacus ultricies placerat.</a></h4>                                    
-                                    <div class="blog-btn"><a href="blog-details.html">Read More</a></div>
+                                    <h4><a href="blog-details.php">Seas accumsan nulla nec lacus ultricies placerat.</a></h4>                                    
+                                    <div class="blog-btn"><a href="blog-details.php">Read More</a></div>
                                 </div>
                             </div>
                         </div>
@@ -895,7 +943,7 @@
             </section>
             <!-- blog-area-end -->
               <!-- newslater-area -->
-            <section class="newslater-area">
+            <section class="newslater-area pb-120">
                 <div class="container p-relative">
                      <div class="newslater-text">Newsletter</div>
                    <div class="row align-items-center">                            
@@ -919,114 +967,13 @@
                 </div>
             </section>
             <!-- newslater-aread-end -->
-        </main>
-        <!-- main-area-end -->
-    <!-- footer -->
-        <footer class="footer-bg footer-p" style="background-color: #2C4549;">
-            <div class="footer-top  pt-120 pb-30">
-                <div class="container">
-                    <div class="row justify-content-between">
-                        
-                        <div class="col-xl-4 col-lg-4 col-sm-6">
-                            <div class="footer-widget mb-30">                                
-                                <div class="f-about mb-20">
-                                    <div class="f-widget-title">
-                                        <h5> <img src="img/icon/menu-icon.png" alt="img"> MENU</h5>
-                                    </div>
-                                     <p>In industry, the heartbeat of modern civilization resonates through the relentless pursuit of progress.</p>
-                                    
-                                    </div> 
-                                 <div class="f-widget-title">
-                                    <h2>Contact</h2>
-                                </div>
-                                <div class="footer-link">
-                                    <ul>                                        
-                                        <li><a href="about.html"> Careers</a></li>
-                                        <li><a href="#"> Mon- Sat: 9am to 6pm </a></li>                                       
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-						<div class="col-xl-2 col-lg-2 col-sm-6">
-                            <div class="footer-widget mb-30">
-                                <div class="f-widget-title">
-                                    <h2>Essential</h2>
-                                </div>
-                                <div class="footer-link">
-                                    <ul>                                        
-                                        <li><a href="index.html">About us</a></li>
-                                        <li><a href="about.html"> Careers</a></li>
-                                        <li><a href="services.html"> Prices </a></li>
-                                        <li><a href="contact.html"> Services</a></li>
-                                        <li><a href="blog.html">Get In Touch </a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-2 col-lg-2 col-sm-6">
-                            <div class="footer-widget mb-30">
-                                <div class="f-widget-title">
-                                    <h2>More Pages</h2>
-                                </div>
-                                <div class="footer-link">
-                                    <ul>                                        
-                                        <li><a href="index.html">Auto production</a></li>
-                                        <li><a href="about.html"> Investors</a></li>
-                                        <li><a href="services.html"> News </a></li>
-                                        <li><a href="contact.html"> FAQ’s</a></li>
-                                        <li><a href="blog.html">Contact us </a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>                        
-                       <div class="col-xl-2 col-lg-2 col-sm-6">
-                            <div class="footer-widget mb-30">
-                                <div class="f-widget-title">
-                                    <h2>Downloads</h2>
-                                </div>
-                                <div class="footer-link">
-                                    <ul>                                        
-                                        <li><a href="#"><img src="img/icon/gplay-btn.png" alt="img"></a></li>
-                                        <li><a href="#"> <img src="img/icon/app-strore-btn.png" alt="img"></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                       
-                    </div>
-                </div>
-            </div>
-            <div class="copyright-wrap">
-                <div class="container">
-                    <div class="row align-items-center c-mid">
-                        <div class="col-lg-6 col-md-4">
-                            <div class="footer-social">                                    
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                                <a href="#"><i class="fab fa-youtube"></i></a>
-                                <a href="#"><i class="fab fa-linkedin"></i></a>
-                            </div>    
-                        </div>
-                         <div class="col-lg-6 col-md-8 text-right text-xl-right">
-                               <ul>
-                                    <li><a href="#">Privacy Policy</a></li>    
-                                    <li><a href="#">Terms Of Service</a></li>    
-                                    <li><a href="#">Legal</a></li>    
-                                </ul>
-                            </div>
-                    </div>
-                    <div class="row align-items-center">
-                        <div class="col-lg-12">
-                          <div class="copy-text text-center">
-                                 Copyright &copy; Dahotel 2024. All rights reserved.       
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- footer-end -->
+          
+             </div>
+        </div>
+        </div>
+       
+   
+
 		<!-- JS here -->
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="js/vendor/jquery.min.js"></script>
