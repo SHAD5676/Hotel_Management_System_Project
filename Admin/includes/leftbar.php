@@ -52,7 +52,13 @@
         <li class="nav-item">
           <a href="check.php" class="nav-link">
             <i class="nav-icon fas fa-door-open"></i>
-            <p>Check-in/Check-out</p>
+            <p>Check In</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="check.php" class="nav-link">
+            <i class="nav-icon fas fa-door-open"></i>
+            <p>Check Out</p>
           </a>
         </li>
         <li class="nav-item">
