@@ -91,13 +91,7 @@
                   <p>New Services</p>
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="all_service.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>All Services</p>
-                </a>
-              </li>
-
+              
 
             </ul>
           </li>
