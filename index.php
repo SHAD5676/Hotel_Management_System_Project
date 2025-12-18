@@ -266,7 +266,7 @@
                     <div class="row justify-content-center align-items-center">
                          <div class="col-lg-12 col-md-12 col-sm-12">
                             <div class="s-about-img p-relative  wow fadeInUp animated" data-animation="fadeInUp" data-delay=".4s">
-                                <a href="https://www.youtube.com/watch?v=gyGsPlt06bo" class="popup-video"> <img src="img/features/about.jpg" alt="img">   </a>
+                                <a href="https://www.youtube.com/watch?v=gyGsPlt06bo" class="popup-video"> <img src="images/feature2.jpg" alt="img">   </a>
                                <div class="about-icon">
                                      <img src="img/features/since.png" alt="img">   
                                 </div>
@@ -301,7 +301,7 @@
                             <div class="single-services text-center mb-30">
                                 <div class="services-thumb">
 									<a class="gallery-link popup-image" href="img/gallery/room-img01.png">
-                                    <img src="img/gallery/room-img01.png" alt="img">
+                                    <img src="images/images (4).jpeg" alt="img">
 									</a>
                                 </div>
                                 <div class="services-content">                                     
@@ -330,7 +330,7 @@
                              <div class="single-services text-center mb-30">
                                 <div class="services-thumb">
 									<a class="gallery-link popup-image" href="img/gallery/room-img02.png">
-                                    <img src="img/gallery/room-img02.png" alt="img">
+                                    <img src="images/bed.jpg" alt="img">
 									</a>
                                 </div>
                                 <div class="services-content">                                     
@@ -360,12 +360,12 @@
                               <div class="single-services text-center mb-30">
                                 <div class="services-thumb">
 									<a class="gallery-link popup-image" href="img/gallery/room-img03.png">
-                                    <img src="img/gallery/room-img03.png" alt="img">
+                                    <img src="images/images (2).jpeg" alt="img">
 									</a>
                                 </div>
                                 <div class="services-content">                                    
                                     <h4><a href="single-rooms.php">Super Balcony Double Room</a></h4>    
-                                   <p>Visitors to your city need to eat. In fact, some people visit new towns specifically.</p>
+                                   <p>Visitors to your city need to eat. In fact, some people visit new.</p>
                                     <div class="icon">
                                         <ul>
                                             <li><img src="img/icon/sve-icon1.png" alt="img"></li>
