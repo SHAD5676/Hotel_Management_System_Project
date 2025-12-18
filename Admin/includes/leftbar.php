@@ -10,7 +10,7 @@
   <div class="sidebar">
     <!-- Sidebar user panel (optional) -->
     <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-       </div>
+    </div>
 
     <!-- Sidebar Menu -->
     <nav class="mt-2">
@@ -91,11 +91,17 @@
                   <p>New Services</p>
                 </a>
               </li>
-              
+              <li class="nav-item">
+                <a href="all_service.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>All Services</p>
+                </a>
+              </li>
 
-            </ul>
-          </li>
-        </ul>
+
+      </ul>
+      </li>
+      </ul>
       </ul>
     </nav>
     <!-- /.sidebar-menu -->
