@@ -19,15 +19,21 @@ if (isset($_POST['submit'])) {
   if (!empty($category_name) && !empty($price)) {
     $sql = "INSERT INTO room_categories (category_name, price, details) VALUES ('$category_name', '$price', '$details')";
     if ($conn->query($sql)) {
-      $message = "<div class='alert alert-success'>Category added successfully!</div>";
+      // Success: redirect to categories.php with session message
+      $_SESSION['success'] = "Category added successfully!";
+      header("Location: room_categories.php");
+      exit;
     } else {
-      $message = "<div class='alert alert-danger'>Error: " . $conn->error . "</div>";
+      // Database error: show on the same page
+      $message = "<div class='alert alert-danger'>Database Error: " . $conn->error . "</div>";
     }
   } else {
+    // Validation error: show on the same page
     $message = "<div class='alert alert-warning'>Please fill in all required fields.</div>";
   }
 }
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -69,6 +75,13 @@ if (isset($_POST['submit'])) {
             <div class="card-header">
               <h3 class="card-title">Category Details</h3>
             </div>
+
+            <?php
+            if (!empty($message)) {
+              echo $message;
+            }
+            ?>
+
 
             <!-- Form start -->
             <form method="post">

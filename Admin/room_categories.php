@@ -54,6 +54,18 @@ $result = $conn->query("SELECT * FROM room_categories ORDER BY category_id DESC"
               </a>
             </div>
           </div>
+
+          <!-- Success/Error Messages -->
+          <?php
+          if (isset($_SESSION['success'])) {
+            echo "<div class='alert alert-success'>{$_SESSION['success']}</div>";
+            unset($_SESSION['success']);
+          }
+          if (isset($_SESSION['error'])) {
+            echo "<div class='alert alert-danger'>{$_SESSION['error']}</div>";
+            unset($_SESSION['error']);
+          }
+          ?>
         </div>
       </div>
 
@@ -102,15 +114,11 @@ $result = $conn->query("SELECT * FROM room_categories ORDER BY category_id DESC"
     <aside class="control-sidebar control-sidebar-dark"></aside>
   </div>
 
-  <!-- jQuery -->
+  <!-- Scripts -->
   <script src="plugins/jquery/jquery.min.js"></script>
-  <!-- Bootstrap 4 -->
   <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <!-- overlayScrollbars -->
   <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-  <!-- AdminLTE App -->
   <script src="dist/js/adminlte.js"></script>
-  <!-- DataTables -->
   <script src="plugins/datatables/jquery.dataTables.min.js"></script>
   <script src="plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
   <script src="plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
