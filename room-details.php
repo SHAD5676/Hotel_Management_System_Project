@@ -74,25 +74,29 @@ $room = $result->fetch_assoc();
               <?= $room['status'] ?>
             </span>
           </p>
+          <form method="post" action="process_booking.php">
+    <input type="hidden" name="room_id" value="<?= $room['room_id'] ?>">
+    <input type="hidden" name="price" value="<?= $room['price'] ?>">
 
-          <!-- Nights Selector -->
-          <form method="post" action="booking.php">
-            <input type="hidden" name="room_id" value="<?= $room['room_id'] ?>">
-            <div class="form-group">
-              <label for="nights">Number of nights:</label>
-              <select name="nights" id="nights" class="form-control" required>
-                <?php for ($i = 1; $i <= 30; $i++): ?>
-                  <option value="<?= $i ?>"><?= $i ?> <?= $i == 1 ? 'night' : 'nights' ?></option>
-                <?php endfor; ?>
-              </select>
-            </div>
-            <button type="submit" class="btn btn-primary mt-3" <?= $room['status'] != 'Available' ? 'disabled' : '' ?>>
-              Book Now
-            </button>
-            <?php if ($room['status'] != 'Available'): ?>
-              <small class="text-danger d-block mt-2">This room is not available for booking.</small>
-            <?php endif; ?>
-          </form>
+    <div class="form-group">
+        <label for="nights">Number of nights:</label>
+        <select name="nights" id="nights" class="form-control" required>
+            <?php for ($i=1; $i<=30; $i++): ?>
+                <option value="<?= $i ?>"><?= $i ?> <?= $i==1?'night':'nights' ?></option>
+            <?php endfor; ?>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-3" <?= $room['status']!='Available'?'disabled':'' ?>>Book Now</button>
+
+    <?php if($room['status']!='Available'): ?>
+        <small class="text-danger d-block mt-2">This room is not available for booking.</small>
+    <?php endif; ?>
+</form>
+
+
+          
+
         </div>
       </div>
     </div>

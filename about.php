@@ -132,7 +132,7 @@
                     <div class="row justify-content-center align-items-center">
                          <div class="col-lg-6 col-md-12 col-sm-12">
                             <div class="p-relative  wow fadeInLeft animated" data-animation="fadeInLeft" data-delay=".4s">
-                                <img src="img/features/feature.png" alt="img">  
+                                <img src="images/11.jpeg" alt="img">  
                             </div>
                         </div>
                         
@@ -179,7 +179,7 @@
                             <div class="s-about-img p-relative  wow fadeInUp animated" data-animation="fadeInUp" data-delay=".4s">
                                 <a href="https://www.youtube.com/watch?v=gyGsPlt06bo" class="popup-video"> <img src="img/features/about.jpg" alt="img">   </a>
                                <div class="about-icon">
-                                     <img src="img/features/since.png" alt="img">   
+                                     <img src="images/12.jpg" alt="img">   
                                 </div>
                             </div>
                           
@@ -196,27 +196,27 @@
                          <div class="col-lg-12 col-md-12 col-sm-12 pr-30">
                            <div class="feature-slider-active">                               
                                <div class="feature-slider-box">                                   
-                                    <img src="img/bg/feature-slider-img.png" alt="contact-bg-an-01">
+                                    <img src="images/13jpg" alt="contact-bg-an-01">
                                     <div class="text">
                                         <h2>Minimal Duplex Room /</h2>
                                     </div>
                                </div>                          
                                <div class="feature-slider-box">                                   
-                                    <img src="img/bg/feature-slider-img.png" alt="contact-bg-an-01">
+                                    <img src="images/13" alt="contact-bg-an-01">
                                     <div class="text">
                                         <h2>wifi bed water house /</h2>
                                     </div>
                                </div>
                            
                                <div class="feature-slider-box">                                   
-                                    <img src="img/bg/feature-slider-img.png" alt="contact-bg-an-01">
+                                    <img src="images/14" alt="contact-bg-an-01">
                                     <div class="text">
                                         <h2>free wifi zone /</h2>
                                     </div>
                                </div>
                              
                                <div class="feature-slider-box">                                   
-                                    <img src="img/bg/feature-slider-img.png" alt="contact-bg-an-01">
+                                    <img src="images/15" alt="contact-bg-an-01">
                                     <div class="text">
                                         <h2>wifi bed water house /</h2>
                                     </div>
@@ -239,7 +239,7 @@
                             <div class="single-services ser-m mb-30">
                                 <div class="services-thumb">
 									<a class="gallery-link popup-image" href="img/gallery/room-img01.png">
-                                    <img src="img/gallery/room-img01.png" alt="img">
+                                    <img src="images/16" alt="img">
 									</a>
                                 </div>
                                 <div class="services-content text-center">                                    
@@ -268,7 +268,7 @@
                            <div class="single-services ser-m mb-30">
                                 <div class="services-thumb">
 									<a class="gallery-link popup-image" href="img/gallery/room-img02.png">
-                                    <img src="img/gallery/room-img02.png" alt="img">
+                                    <img src="images/17" alt="img">
 									</a>
                                 </div>
                                 <div class="services-content text-center">                                     
@@ -297,7 +297,7 @@
                             <div class="single-services ser-m mb-30">
                                 <div class="services-thumb">
 									<a class="gallery-link popup-image" href="img/gallery/room-img03.png">
-                                    <img src="img/gallery/room-img03.png" alt="img">
+                                    <img src="images/18" alt="img">
 									</a>
                                 </div>
                                 <div class="services-content text-center">                                     
@@ -326,7 +326,7 @@
                            <div class="single-services ser-m mb-30">
                                 <div class="services-thumb">
 									<a class="gallery-link popup-image" href="img/gallery/room-img04.png">
-                                    <img src="img/gallery/room-img04.png" alt="img">
+                                    <img src="images/19" alt="img">
 									</a>
                                 </div>
                                 <div class="services-content text-center">                                  
@@ -355,7 +355,7 @@
                            <div class="single-services ser-m mb-30">
                                 <div class="services-thumb">
 									<a class="gallery-link popup-image" href="img/gallery/room-img05.png">
-                                    <img src="img/gallery/room-img05.png" alt="img">
+                                    <img src="images/20" alt="img">
 									</a>
                                 </div>
                               <div class="services-content text-center">                                  
@@ -384,7 +384,7 @@
                             <div class="single-services ser-m mb-30">
                                 <div class="services-thumb">
 									<a class="gallery-link popup-image" href="img/gallery/room-img06.png">
-                                    <img src="img/gallery/room-img06.png" alt="img">
+                                    <img src="images/21" alt="img">
 									</a>
                                 </div>
                                <div class="services-content text-center">                                  
@@ -434,7 +434,7 @@
                                             <h6>Rosalina William</h6>
                                             <span>ceo</span>
                                         </div>
-                                         <img src="img/testimonial/testi_avatar.png" alt="img">
+                                         <img src="images/22" alt="img">
                                     </div>
                                 </div>
                                 <div class="single-testimonial">

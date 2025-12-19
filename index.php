@@ -137,7 +137,7 @@
                                 <div class="col-lg-6 col-md-6">
                                 <div class="services-08-item mb-70">                                    
                                     <div class="services-08-thumb">
-                                     <img src="img/icon/fe-icon01.png" alt="img">
+                                     <img src="images/3.jpg" alt="img">
                                     </div>
                                     <div class="services-08-content">
                                         <h3><a href="single-service.php"> Restaurants</a></h3>
@@ -148,7 +148,7 @@
                                <div class="col-lg-6 col-md-6">
                                <div class="services-08-item mb-70">                                                 
                                     <div class="services-08-thumb">
-                                        <img src="img/icon/fe-icon02.png" alt="img">
+                                        <img src="images/1.jpg" alt="img">
                                     </div>
                                     <div class="services-08-content">
                                         <h3><a href="single-service.php">Luxury Room</a></h3>
@@ -159,7 +159,7 @@
                             <div class="col-lg-6 col-md-6">
                                <div class="services-08-item mb-70">                                        
                                     <div class="services-08-thumb">
-                                     <img src="img/icon/fe-icon03.png" alt="img">
+                                     <img src="images/2.jpg" alt="img">
                                     </div>
                                     <div class="services-08-content">
                                         <h3><a href="single-service.php">Entertainment</a></h3>
@@ -170,7 +170,7 @@
                           <div class="col-lg-6 col-md-6">
                              <div class="services-08-item mb-70">                        
                                     <div class="services-08-thumb">
-                                     <img src="img/icon/fe-icon04.png" alt="img">
+                                     <img src="images/pool.jpg" alt="img">
                                     </div>
                                     <div class="services-08-content">
                                         <h3><a href="single-service.php">Pool Area</a></h3>
@@ -181,7 +181,7 @@
                               <div class="col-lg-6 col-md-6">
                                   <div class="services-08-item mb-70">                           
                                     <div class="services-08-thumb">
-                                   <img src="img/icon/fe-icon05.png" alt="img">
+                                   <img src="images/bar7.jpg" alt="img">
                                     </div>
                                     <div class="services-08-content">
                                         <h3><a href="single-service.phpl">Cocktail Bar</a></h3>
@@ -192,7 +192,7 @@
                              <div class="col-lg-6 col-md-6">
                                <div class="services-08-item mb-70">                        
                                     <div class="services-08-thumb">
-                                     <img src="img/icon/fe-icon06.png" alt="img">
+                                     <img src="images/hotel1.jpeg" alt="img">
                                     </div>
                                     <div class="services-08-content">
                                         <h3><a href="single-service.php">Tour Guide</a></h3>
@@ -418,45 +418,7 @@
                 </div>
             </section>
             <!-- room-area-end -->    
-            <!-- feature-area -->
-            <section class="feature-area2 p-relative pt-120 pb-120 fix" style="background: #2C4549;">              
-                <div class="container-fluid">
-                    <div class="row justify-content-center align-items-center">
-                         <div class="col-lg-12 col-md-12 col-sm-12 pr-30">
-                           <div class="feature-slider-active">                               
-                               <div class="feature-slider-box">                                   
-                                    <img src="img/bg/feature-slider-img.png" alt="contact-bg-an-01">
-                                    <div class="text">
-                                        <h2>Minimal Duplex Room /</h2>
-                                    </div>
-                               </div>                          
-                               <div class="feature-slider-box">                                   
-                                    <img src="img/bg/feature-slider-img.png" alt="contact-bg-an-01">
-                                    <div class="text">
-                                        <h2>wifi bed water house /</h2>
-                                    </div>
-                               </div>
-                           
-                               <div class="feature-slider-box">                                   
-                                    <img src="img/bg/feature-slider-img.png" alt="contact-bg-an-01">
-                                    <div class="text">
-                                        <h2>free wifi zone /</h2>
-                                    </div>
-                               </div>
-                             
-                               <div class="feature-slider-box">                                   
-                                    <img src="img/bg/feature-slider-img.png" alt="contact-bg-an-01">
-                                    <div class="text">
-                                        <h2>wifi bed water house /</h2>
-                                    </div>
-                               </div>
-                            </div>
-                        </div>
-					 
-                    </div>
-                </div>
-            </section>
-            <!-- feature-area-end -->
+            
             <!-- pricing-area -->
             <section id="pricing" class="pricing-area pt-120 pb-60 fix p-relative">
                 <div class="container"> 
@@ -475,7 +437,7 @@
                         <div class="col-lg-4 col-md-6">
                              <div class="pricing-box pricing-box2 mb-60">
                                     <div class="pricng-img">
-                                     <img src="img/bg/pr-img-01.jpg" alt="contact-bg-an-01">
+                                     <img src="images/images.jpeg" alt="contact-bg-an-01">
                                     </div>
                                     <div class="pricing-head">  
                                         <h3>luxury plan</h3>    
@@ -503,7 +465,7 @@
                            <div class="col-lg-4 col-md-6">
                              <div class="pricing-box pricing-box2 mb-60">
                                     <div class="pricng-img">
-                                     <img src="img/bg/pr-img-02.jpg" alt="contact-bg-an-01">
+                                     <img src="images/images(13).jpeg" alt="contact-bg-an-01">
                                     </div>
                                     <div class="pricing-head">  
                                         <h3>couple plan</h3>    
@@ -531,7 +493,7 @@
                           <div class="col-lg-4 col-md-6">
                              <div class="pricing-box pricing-box2 mb-60">
                                     <div class="pricng-img">
-                                     <img src="img/bg/pr-img-03.jpg" alt="contact-bg-an-01">
+                                     <img src="images/images(12).jpeg" alt="contact-bg-an-01">
                                     </div>
                                     <div class="pricing-head">  
                                         <h3>intro price</h3>    
@@ -566,7 +528,7 @@
                     <div class="row align-items-center">
                          <div class="col-lg-6 col-md-12">
                              <div class="booking-img">
-                                 <img src="img/bg/booking-img.png" alt="img">
+                                 <img src="images/9.jpg" alt="img">
                                  <div class="text">
                                     <h3>Seasonal or <span>Citywide Events</span></h3>
                                      <p>What big annual or seasonal events are can’t-miss?</p>
@@ -698,37 +660,37 @@
                      <div class="row">
                         <div class="col-lg-2 col-sm-6">
                             <div class="instagram-box">
-                                 <img src="img/bg/ins-img-01.png" alt="img">
+                                 <img src="images/images(15).jpeg" alt="img">
                                 <div class="hover"><a href="#"><img src="img/icon/instagram-icon.png" alt="img"></a></div>
                             </div>
                         </div>
                         <div class="col-lg-2 col-sm-6">
                             <div class="instagram-box">
-                                 <img src="img/bg/ins-img-02.png" alt="img">
+                                 <img src="images/images(14).jpeg" alt="img">
                                 <div class="hover"><a href="#"><img src="img/icon/instagram-icon.png" alt="img"></a></div>
                             </div>
                         </div>
                         <div class="col-lg-2 col-sm-6">
                             <div class="instagram-box">
-                                 <img src="img/bg/ins-img-03.png" alt="img">
+                                 <img src="images/10.jpg" alt="img">
                                  <div class="hover"><a href="#"><img src="img/icon/instagram-icon.png" alt="img"></a></div>
                             </div>
                         </div>
                         <div class="col-lg-2 col-sm-6">
                             <div class="instagram-box">
-                                 <img src="img/bg/ins-img-04.png" alt="img">
+                                 <img src="images/room11.jpg" alt="img">
                                 <div class="hover"><a href="#"><img src="img/icon/instagram-icon.png" alt="img"></a></div>
                             </div>
                         </div>
                         <div class="col-lg-2 col-sm-6">
                             <div class="instagram-box">
-                                 <img src="img/bg/ins-img-05.png" alt="img">
+                                 <img src="images/18.jpg" alt="img">
                                  <div class="hover"><a href="#"><img src="img/icon/instagram-icon.png" alt="img"></a></div>
                             </div>
                         </div>
                        <div class="col-lg-2 col-sm-6">
                             <div class="instagram-box">
-                                 <img src="img/bg/ins-img-06.png" alt="img">
+                                 <img src="images/11.jpeg" alt="img">
                                  <div class="hover"><a href="#"><img src="img/icon/instagram-icon.png" alt="img"></a></div>
                             </div>
                         </div>
