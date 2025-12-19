@@ -95,7 +95,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-12">
                           <div class="copy-text text-center">
-                                 Copyright &copy; Lakeshore Hotel 2025. All rights reserved.       
+                                 Copyright &copy; Da Hotel 2025. All rights reserved.       
                             </div>
                         </div>
                     </div>

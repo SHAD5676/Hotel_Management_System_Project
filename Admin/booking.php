@@ -1,120 +1,87 @@
 <?php
 include_once('db_config.php');
 session_start();
-if (!isset($_SESSION['username'])) {
-  header('location:index.php');
-  exit;
-}
 
-// Fetch all categories
-$result = $conn->query("SELECT * FROM room_categories ORDER BY category_id DESC");
+if(!isset($_SESSION['username'])){
+    header('location:index.php');
+    exit;
+}
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Admin | Room Categories</title>
-
-  <!-- Google Font: Source Sans Pro -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
-  <!-- AdminLTE -->
+  <title>Bookings</title>
   <link rel="stylesheet" href="dist/css/adminlte.min.css">
-  <!-- overlayScrollbars -->
-  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
-  <!-- DataTables -->
-  <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
-  <link rel="stylesheet" href="plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
-  <link rel="stylesheet" href="plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
 </head>
-
 <body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
 
-  <div class="wrapper">
+<?php include("includes/navbar.php"); ?>
+<?php include("includes/leftbar.php"); ?>
 
-    <?php include("includes/navbar.php"); ?>
-    <?php include("includes/leftbar.php"); ?>
+<div class="content-wrapper p-4">
+<h3>Bookings</h3>
 
-    <div class="content-wrapper">
+<?php
+if(isset($_SESSION['success'])){
+    echo "<div class='alert alert-success'>{$_SESSION['success']}</div>";
+    unset($_SESSION['success']);
+}
+?>
 
+<a href="add_booking.php" class="btn btn-primary mb-2">Add Booking</a>
 
-      <!-- Main content -->
-      <section class="content">
-        <div class="container-fluid">
-          <div class="card">
-            <div class="card-body">
-              <table id="categoriesTable" class="table table-bordered table-striped">
-                <thead>
-                  <tr>
-                    <th>Booking ID</th>
-                    <th>Room ID</th>
-                    <th>Customer ID</th>
-                    <th>Check In</th>
-                    <th>Check Out</th>
-                     <th>Total Price</th>
-                      <th>Booking Status</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <?php while ($row = $result->fetch_assoc()): ?>
-                    <tr>
-                      <td><?php echo $row['category_id']; ?></td>
-                      <td><?php echo htmlspecialchars($row['category_name']); ?></td>
-                      <td><?php echo htmlspecialchars($row['price']); ?></td>
-                      <td><?php echo htmlspecialchars($row['details']); ?></td>
-                      <td><?php echo htmlspecialchars($row['details']); ?></td>
-                      <td><?php echo htmlspecialchars($row['details']); ?></td>
-                      <td><?php echo htmlspecialchars($row['details']); ?></td>
-                      
-                      
-                    </tr>
-                  <?php endwhile; ?>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </section>
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>#</th>
+<th>Room</th>
+<th>Customer ID</th>
+<th>Check In</th>
+<th>Check Out</th>
+<th>Total Price</th>
+<th>Status</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<?php
+$sql = "SELECT b.booking_id, b.customer_id, b.check_in, b.check_out,
+               b.total_price, b.booking_status,
+               r.room_number
+        FROM bookings b
+        JOIN rooms r ON b.room_id = r.room_id
+        ORDER BY b.booking_id DESC";
 
-    </div>
+$result = $conn->query($sql);
+$i=1;
 
-    <?php include("includes/footer.php"); ?>
-    <aside class="control-sidebar control-sidebar-dark"></aside>
-  </div>
-
-  <!-- jQuery -->
-  <script src="plugins/jquery/jquery.min.js"></script>
-  <!-- Bootstrap 4 -->
-  <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <!-- overlayScrollbars -->
-  <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-  <!-- AdminLTE App -->
-  <script src="dist/js/adminlte.js"></script>
-  <!-- DataTables -->
-  <script src="plugins/datatables/jquery.dataTables.min.js"></script>
-  <script src="plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
-  <script src="plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
-  <script src="plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
-  <script src="plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
-  <script src="plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
-
-  <script>
-    $(function() {
-      $("#categoriesTable").DataTable({
-        "responsive": true,
-        "autoWidth": false,
-        "paging": true,
-        "lengthChange": true,
-        "searching": true,
-        "ordering": true,
-        "info": true
-      });
-    });
-  </script>
+if($result->num_rows>0){
+    while($row=$result->fetch_assoc()){
+        echo "<tr>
+                <td>{$i}</td>
+                <td>{$row['room_number']}</td>
+                <td>{$row['customer_id']}</td>
+                <td>{$row['check_in']}</td>
+                <td>{$row['check_out']}</td>
+                <td>{$row['total_price']}</td>
+                <td>{$row['booking_status']}</td>
+                <td>
+                    <a href='edit_booking.php?id={$row['booking_id']}' class='btn btn-sm btn-warning'>Edit</a>
+                    <a href='delete_booking.php?id={$row['booking_id']}' onclick='return confirm(\"Are you sure?\")' class='btn btn-sm btn-danger'>Delete</a>
+                </td>
+              </tr>";
+        $i++;
+    }
+} else {
+    echo "<tr><td colspan='8' class='text-center'>No bookings found</td></tr>";
+}
+?>
+</tbody>
+</table>
+</div>
+</div>
 </body>
-
 </html>

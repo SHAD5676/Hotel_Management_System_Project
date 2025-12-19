@@ -50,7 +50,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="check.php" class="nav-link">
+          <a href="check_in.php" class="nav-link">
             <i class="nav-icon fas fa-door-open"></i>
             <p>Check In</p>
           </a>
@@ -68,37 +68,20 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="stuff.php" class="nav-link">
+          <a href="user.php" class="nav-link">
             <i class="nav-icon fas fa-user-cog"></i>
             <p>Users/Stuffs</p>
           </a>
         </li>
 
-        <!-- Services with submenu -->
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+        <!-- Services -->
+      
           <li class="nav-item">
-            <a href="#" class="nav-link">
+             <a href="service_new.php" class="nav-link">
               <i class="nav-icon fas fa-chart-pie"></i>
-              <p>
-                Services
-                <i class="right fas fa-angle-left"></i>
-              </p>
+              <p>Services</p>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="service_new.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>New Services</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="all_service.php" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>All Services</p>
-                </a>
-              </li>
-
-
+          
       </ul>
       </li>
       </ul>

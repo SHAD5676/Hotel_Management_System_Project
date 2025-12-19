@@ -63,7 +63,7 @@ if (!isset($_SESSION['username'])) {
               <table class="table table-bordered table-hover">
                 <thead class="thead-light">
                   <tr>
-                    <th>#</th>
+                    <th>ID</th>
                     <th>Room Number</th>
                     <th>Category</th>
                     <th>Price</th>
