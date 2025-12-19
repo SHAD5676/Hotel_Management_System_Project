@@ -9,31 +9,50 @@ if (!isset($_SESSION['username'])) {
 
 $message = '';
 
+// Handle form submission
 if (isset($_POST['submit'])) {
   $room_number = trim($_POST['room_number']);
   $category_id = (int) $_POST['category_id'];
   $status = trim($_POST['status']);
 
+  // Validate required fields
   if ($room_number && $category_id && $status) {
     $room_number = $conn->real_escape_string($room_number);
     $status = $conn->real_escape_string($status);
 
-    $sql = "INSERT INTO rooms (room_number, category_id, status)
-                VALUES ('$room_number', '$category_id', '$status')";
-
+    // Insert room
+    $sql = "INSERT INTO rooms (room_number, category_id, status) VALUES ('$room_number', '$category_id', '$status')";
     if ($conn->query($sql)) {
-      // Optional: store success message in session
-      $_SESSION['success'] = "Room added successfully!";
+      $room_id = $conn->insert_id; // Newly inserted room ID
 
+      // Handle image upload
+      if (isset($_FILES['image']) && $_FILES['image']['error'] == 0) {
+        $targetDir = "uploads/rooms/";
+        if (!is_dir($targetDir)) mkdir($targetDir, 0755, true);
+
+        $fileName = basename($_FILES['image']['name']);
+        $targetFile = $targetDir . time() . "_" . $fileName;
+
+        if (move_uploaded_file($_FILES['image']['tmp_name'], $targetFile)) {
+          // Insert image record
+          $sql_img = "INSERT INTO room_images (room_id, image_url) VALUES ('$room_id', '$targetFile')";
+          $conn->query($sql_img);
+        } else {
+          $message = "<div class='alert alert-warning'>Room added, but image upload failed.</div>";
+        }
+      }
+
+      $_SESSION['success'] = "Room added successfully!";
       header("Location: room.php");
       exit;
     } else {
-      $message = "<div class='alert alert-danger'>Error: {$conn->error}</div>";
+      $message = "<div class='alert alert-danger'>Database Error: {$conn->error}</div>";
     }
   } else {
     $message = "<div class='alert alert-warning'>All fields are required.</div>";
   }
 }
+
 
 ?>
 
@@ -73,7 +92,8 @@ if (isset($_POST['submit'])) {
               <h3 class="card-title">Room Details</h3>
             </div>
 
-            <form method="post">
+            <form method="post" enctype="multipart/form-data">
+
               <div class="card-body">
 
                 <div class="form-group">
@@ -104,6 +124,15 @@ if (isset($_POST['submit'])) {
                   </select>
                 </div>
 
+                <div class="form-group">
+                  <label>Room Image</label>
+                  <input type="file" name="image" class="form-control" accept="image/*" id="roomImageInput">
+                  <div class="mt-2">
+                    <img id="roomImagePreview" src="#" alt="Image Preview" style="max-width: 200px; display: none; border: 1px solid #ccc; padding: 5px;">
+                  </div>
+                </div>
+
+
               </div>
 
               <div class="card-footer">
@@ -124,6 +153,26 @@ if (isset($_POST['submit'])) {
   <script src="plugins/jquery/jquery.min.js"></script>
   <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="dist/js/adminlte.js"></script>
+
+  <script>
+    document.getElementById('roomImageInput').addEventListener('change', function(event) {
+      const file = event.target.files[0];
+      const preview = document.getElementById('roomImagePreview');
+
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          preview.src = e.target.result;
+          preview.style.display = 'block';
+        };
+        reader.readAsDataURL(file);
+      } else {
+        preview.src = '#';
+        preview.style.display = 'none';
+      }
+    });
+  </script>
+
 </body>
 
 </html>

@@ -72,24 +72,25 @@ if (!isset($_SESSION['username'])) {
                     <th>Category</th>
                     <th>Price</th>
                     <th>Status</th>
+                    <th>Image</th>
                     <th width="140">Actions</th>
                   </tr>
                 </thead>
-                <?php
-                $sql = "SELECT r.room_id, r.room_number, r.status,
-               c.category_name, c.price
-        FROM rooms r
-        JOIN room_categories c ON r.category_id = c.category_id
-        ORDER BY r.room_id DESC";
-
-                $result = $conn->query($sql);
-                $i = 1;
-                ?>
-
                 <tbody>
                   <?php
+                  $sql = "SELECT r.room_id, r.room_number, r.status,
+                                       c.category_name, c.price,
+                                       ri.image_url
+                                FROM rooms r
+                                JOIN room_categories c ON r.category_id = c.category_id
+                                LEFT JOIN room_images ri ON r.room_id = ri.room_id
+                                ORDER BY r.room_id DESC";
+
+                  $result = $conn->query($sql);
+                  $i = 1;
+
                   if ($result->num_rows > 0) {
-                    while ($row = $result->fetch_assoc()) {
+                    while ($row = $result->fetch_assoc()):
                   ?>
                       <tr>
                         <td><?= $i++ ?></td>
@@ -97,36 +98,40 @@ if (!isset($_SESSION['username'])) {
                         <td><?= htmlspecialchars($row['category_name']) ?></td>
                         <td><?= number_format($row['price'], 2) ?></td>
                         <td>
-                          <span class="badge 
-                    <?= $row['status'] == 'Available' ? 'badge-success' : ($row['status'] == 'Occupied' ? 'badge-danger' : 'badge-warning') ?>">
+                          <span class="badge <?= $row['status'] == 'Available' ? 'badge-success' : ($row['status'] == 'Occupied' ? 'badge-danger' : 'badge-warning') ?>">
                             <?= $row['status'] ?>
                           </span>
+                        </td>
+                        <td>
+                          <?php if (!empty($row['image_url']) && file_exists($row['image_url'])): ?>
+                            <img src="<?= $row['image_url'] ?>" alt="Room Image" style="max-width:60px; border-radius:4px;">
+                          <?php else: ?>
+                            <span class="text-muted">No Image</span>
+                          <?php endif; ?>
                         </td>
                         <td>
                           <a href="edit_room.php?room_id=<?= $row['room_id'] ?>" class="btn btn-sm btn-warning">
                             <i class="fas fa-edit"></i>
                           </a>
-                          <a href="delete_room.php?room_id=<?= $row['room_id'] ?>"
-                            class="btn btn-sm btn-danger"
-                            onclick="return confirm('Are you sure?')">
+                          <a href="delete_room.php?room_id=<?= $row['room_id'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure?')">
                             <i class="fas fa-trash"></i>
                           </a>
                         </td>
                       </tr>
                   <?php
-                    }
+                    endwhile;
                   } else {
-                    echo "<tr><td colspan='6' class='text-center'>No rooms found</td></tr>";
+                    echo "<tr><td colspan='7' class='text-center'>No rooms found</td></tr>";
                   }
                   ?>
                 </tbody>
-
               </table>
             </div>
           </div>
 
         </div>
       </section>
+
     </div>
 
     <?php include("includes/footer.php"); ?>
