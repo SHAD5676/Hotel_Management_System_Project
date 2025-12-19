@@ -74,7 +74,7 @@ $room = $result->fetch_assoc();
               <?= $room['status'] ?>
             </span>
           </p>
-          <form method="post" action="process_booking.php">
+          <form method="post" >
     <input type="hidden" name="room_id" value="<?= $room['room_id'] ?>">
     <input type="hidden" name="price" value="<?= $room['price'] ?>">
 

@@ -41,18 +41,12 @@
                                           <ul>
                                             <li class="has-sub">
                                                 <a href="index.php">Home</a>
-                                                <ul>													
-													<li><a href="index.php">Home Page 01</a></li>
-													<li><a href="index-2.php">Home Page 02</a></li>	
-												</ul>
+                                                
                                             </li>
                                             <li><a href="about.php">About</a></li>        
                                             <li class="has-sub">
                                                 <a href="room.php">our rooms</a>
-                                                <ul>													
-													<li> <a href="room.php">Our Rooms</a></li>
-                                                    <li> <a href="single-rooms.php">Rooms Details</a></li>
-												</ul>
+                                                
                                             </li>     
                                             <li class="has-sub">
                                                 <a href="services.php">Facilities</a>
@@ -60,25 +54,7 @@
 													<li> <a href="services.php">Services</a></li>
                                                     <li> <a href="single-service.php">Services Details</a></li>
 												</ul>
-                                            </li>  
-                                              <li class="has-sub"><a href="#">Pages</a>
-												<ul>
-                                                    <li><a href="projects.php">Gallery</a></li>
-                                                    <li><a href="faq.php">Faq</a></li>
-                                                    <li><a href="team.php">Team</a></li>
-                                                    <li><a href="team-single.php">Team Details</a></li>
-                                                    <li><a href="pricing.php">Pricing</a></li>
-                                                    <li><a href="shop.php">Shop</a></li>
-													<li><a href="shop-details.php">Shop Details</a>
-                                                  </ul>
-											</li>
-                                            <li class="has-sub"> 
-                                                <a href="blog.php">Blog</a>
-                                                <ul>
-                                                    <li><a href="blog.php">Blog</a></li>
-                                                    <li><a href="blog-details.php">Blog Details</a></li>
-                                                </ul>
-                                            </li>
+                                           
                                             <li><a href="contact.php">Contact</a></li>                                               
                                         </ul>
                                     </nav>
@@ -102,7 +78,7 @@
         <main>
             
             <!-- breadcrumb-area -->
-            <section class="breadcrumb-area d-flex align-items-center" style="background-image:url(img/bg/bdrc-bg.jpg)">
+            <section class="breadcrumb-area d-flex align-items-center" style="background-image:url(images/10.jpg)">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-xl-12 col-lg-12">
@@ -132,7 +108,7 @@
                     <div class="row justify-content-center align-items-center">
                          <div class="col-lg-6 col-md-12 col-sm-12">
                             <div class="p-relative  wow fadeInLeft animated" data-animation="fadeInLeft" data-delay=".4s">
-                                <img src="images/11.jpeg" alt="img">  
+                                <img src="images/3.jpg" alt="img">  
                             </div>
                         </div>
                         
@@ -227,284 +203,6 @@
                     </div>
                 </div>
             </section>
-
-            <!-- feature-area-end -->
-               <!-- room-area-->
-            <section id="services" class="services-area pt-120 pb-90">
-              
-                <div class="container">
-                    
-                    <div class="row">
-                        <div class="col-xl-4 col-md-6">
-                            <div class="single-services ser-m mb-30">
-                                <div class="services-thumb">
-									<a class="gallery-link popup-image" href="img/gallery/room-img01.png">
-                                    <img src="images/16" alt="img">
-									</a>
-                                </div>
-                                <div class="services-content text-center">                                    
-                                    <h4><a href="single-rooms.html">Classic Balcony Room</a></h4>    
-                                    <p>Visitors to your city need to eat. In fact, some people visit new towns specifically.</p>
-                                    <div class="icon">
-                                        <ul>
-                                            <li><img src="img/icon/sve-icon1.png" alt="img"></li>
-                                            <li><img src="img/icon/sve-icon2.png" alt="img"></li>
-                                            <li><img src="img/icon/sve-icon3.png" alt="img"></li>
-                                            <li><img src="img/icon/sve-icon4.png" alt="img"></li>
-                                            <li><img src="img/icon/sve-icon5.png" alt="img"></li>
-                                            <li><img src="img/icon/sve-icon6.png" alt="img"></li>
-                                        </ul>
-                                    </div>
-                                     <div class="day-book">
-                                        <ul>
-                                            <li>$600/Night</li>
-                                            <li><a href="contact.html">Book Now</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-md-6">
-                           <div class="single-services ser-m mb-30">
-                                <div class="services-thumb">
-									<a class="gallery-link popup-image" href="img/gallery/room-img02.png">
-                                    <img src="images/17" alt="img">
-									</a>
-                                </div>
-                                <div class="services-content text-center">                                     
-                                    <h4><a href="single-rooms.html">Superior Double Room</a></h4>    
-                                    <p>Visitors to your city need to eat. In fact, some people visit new towns specifically.</p>
-                                    <div class="icon">
-                                        <ul>
-                                            <li><img src="img/icon/sve-icon1.png" alt="img"></li>
-                                            <li><img src="img/icon/sve-icon2.png" alt="img"></li>
-                                            <li><img src="img/icon/sve-icon3.png" alt="img"></li>
-                                            <li><img src="img/icon/sve-icon4.png" alt="img"></li>
-                                            <li><img src="img/icon/sve-icon5.png" alt="img"></li>
-                                            <li><img src="img/icon/sve-icon6.png" alt="img"></li>
-                                        </ul>
-                                    </div>
-                                    <div class="day-book">
-                                        <ul>
-                                            <li>$400/Night</li>
-                                            <li><a href="contact.html">Book Now</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-md-6">
-                            <div class="single-services ser-m mb-30">
-                                <div class="services-thumb">
-									<a class="gallery-link popup-image" href="img/gallery/room-img03.png">
-                                    <img src="images/18" alt="img">
-									</a>
-                                </div>
-                                <div class="services-content text-center">                                     
-                                    <h4><a href="single-rooms.html">Super Balcony Double Room</a></h4>    
-                                     <p>Visitors to your city need to eat. In fact, some people visit new towns specifically.</p>
-                                    <div class="icon">
-                                        <ul>
-                                            <li><img src="img/icon/sve-icon1.png" alt="img"></li>
-                                            <li><img src="img/icon/sve-icon2.png" alt="img"></li>
-                                            <li><img src="img/icon/sve-icon3.png" alt="img"></li>
-                                            <li><img src="img/icon/sve-icon4.png" alt="img"></li>
-                                            <li><img src="img/icon/sve-icon5.png" alt="img"></li>
-                                            <li><img src="img/icon/sve-icon6.png" alt="img"></li>
-                                        </ul>
-                                    </div>
-                                    <div class="day-book">
-                                        <ul>
-                                            <li>$100/Night</li>
-                                            <li><a href="contact.html">Book Now</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-md-6">
-                           <div class="single-services ser-m mb-30">
-                                <div class="services-thumb">
-									<a class="gallery-link popup-image" href="img/gallery/room-img04.png">
-                                    <img src="images/19" alt="img">
-									</a>
-                                </div>
-                                <div class="services-content text-center">                                  
-                                    <h4><a href="single-rooms.html">Delux Double Room</a></h4>    
-                                  <p>Visitors to your city need to eat. In fact, some people visit new towns specifically.</p>
-                                    <div class="icon">
-                                        <ul>
-                                            <li><img src="img/icon/sve-icon1.png" alt="img"></li>
-                                            <li><img src="img/icon/sve-icon2.png" alt="img"></li>
-                                            <li><img src="img/icon/sve-icon3.png" alt="img"></li>
-                                            <li><img src="img/icon/sve-icon4.png" alt="img"></li>
-                                            <li><img src="img/icon/sve-icon5.png" alt="img"></li>
-                                            <li><img src="img/icon/sve-icon6.png" alt="img"></li>
-                                        </ul>
-                                    </div>
-                                       <div class="day-book">
-                                        <ul>
-                                            <li>$300/Night</li>
-                                            <li><a href="contact.html">Book Now</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-md-6">
-                           <div class="single-services ser-m mb-30">
-                                <div class="services-thumb">
-									<a class="gallery-link popup-image" href="img/gallery/room-img05.png">
-                                    <img src="images/20" alt="img">
-									</a>
-                                </div>
-                              <div class="services-content text-center">                                  
-                                    <h4><a href="single-rooms.html">Superior Double Room</a></h4>    
-                                    <p>Visitors to your city need to eat. In fact, some people visit new towns specifically.</p>
-                                    <div class="icon">
-                                        <ul>
-                                            <li><img src="img/icon/sve-icon1.png" alt="img"></li>
-                                            <li><img src="img/icon/sve-icon2.png" alt="img"></li>
-                                            <li><img src="img/icon/sve-icon3.png" alt="img"></li>
-                                            <li><img src="img/icon/sve-icon4.png" alt="img"></li>
-                                            <li><img src="img/icon/sve-icon5.png" alt="img"></li>
-                                            <li><img src="img/icon/sve-icon6.png" alt="img"></li>
-                                        </ul>
-                                    </div>
-                                      <div class="day-book">
-                                        <ul>
-                                            <li>$400/Night</li>
-                                            <li><a href="contact.html">Book Now</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-md-6">
-                            <div class="single-services ser-m mb-30">
-                                <div class="services-thumb">
-									<a class="gallery-link popup-image" href="img/gallery/room-img06.png">
-                                    <img src="images/21" alt="img">
-									</a>
-                                </div>
-                               <div class="services-content text-center">                                  
-                                    <h4><a href="single-rooms.html">Super Balcony Double Room</a></h4>    
-                                   <p>Visitors to your city need to eat. In fact, some people visit new towns specifically.</p>
-                                    <div class="icon">
-                                        <ul>
-                                            <li><img src="img/icon/sve-icon1.png" alt="img"></li>
-                                            <li><img src="img/icon/sve-icon2.png" alt="img"></li>
-                                            <li><img src="img/icon/sve-icon3.png" alt="img"></li>
-                                            <li><img src="img/icon/sve-icon4.png" alt="img"></li>
-                                            <li><img src="img/icon/sve-icon5.png" alt="img"></li>
-                                            <li><img src="img/icon/sve-icon6.png" alt="img"></li>
-                                        </ul>
-                                    </div>
-                                      <div class="day-book">
-                                        <ul>
-                                            <li>$100/Night</li>
-                                            <li><a href="contact.html">Book Now</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- room-area-end --> 
-              <!-- testimonial-area -->
-            <section class="testimonial-area pt-120 pb-120 p-relative fix" style="background-image: url(img/bg/testimonial-bg.png); background-repeat: no-repeat;background-position: center center;">
-                <div class="container">
-                    <div class="row">
-                         <div class="col-lg-12">
-                             <div class="section-title mb-80 text-center">
-                                <h5>testimonials</h5>
-                                  <h2>Happy users <span>says</span></h2>   
-                            </div>
-                           
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="testimonial-active">
-                                <div class="single-testimonial">
-                                    <h3>Best hotel to say</h3>
-                                    <p>“ One of the clearest ways that a hotel can stand out from the competition and wow potential guests. ”</p>
-                                     <div class="testi-author">                                        
-                                        <div class="ta-info">
-                                            <h6>Rosalina William</h6>
-                                            <span>ceo</span>
-                                        </div>
-                                         <img src="images/22" alt="img">
-                                    </div>
-                                </div>
-                                <div class="single-testimonial">
-                                    <h3>Best hotel to say</h3>
-                                    <p>“ One of the clearest ways that a hotel can stand out from the competition and wow potential guests. ”</p>
-                                     <div class="testi-author">                                        
-                                        <div class="ta-info">
-                                            <h6>Nelson Helson</h6>
-                                            <span>founder</span>
-                                        </div>
-                                         <img src="img/testimonial/testi_avatar_02.png" alt="img">
-                                    </div>
-                                </div>
-                               <div class="single-testimonial">
-                                    <h3>Best hotel to say</h3>
-                                    <p>“ One of the clearest ways that a hotel can stand out from the competition and wow potential guests. ”</p>
-                                     <div class="testi-author">                                        
-                                        <div class="ta-info">
-                                            <h6>Tromazo Zelson</h6>
-                                            <span>designer</span>
-                                        </div>
-                                         <img src="img/testimonial/testi_avatar_03.png" alt="img">
-                                    </div>
-                                </div>
-                                   <div class="single-testimonial">
-                                    <h3>Best hotel to say</h3>
-                                    <p>“ One of the clearest ways that a hotel can stand out from the competition and wow potential guests. ”</p>
-                                     <div class="testi-author">                                        
-                                        <div class="ta-info">
-                                            <h6>Rosalina William</h6>
-                                            <span>ceo</span>
-                                        </div>
-                                         <img src="img/testimonial/testi_avatar.png" alt="img">
-                                    </div>
-                                </div>
-                                <div class="single-testimonial">
-                                    <h3>Best hotel to say</h3>
-                                    <p>“ One of the clearest ways that a hotel can stand out from the competition and wow potential guests. ”</p>
-                                     <div class="testi-author">                                        
-                                        <div class="ta-info">
-                                            <h6>Nelson Helson</h6>
-                                            <span>founder</span>
-                                        </div>
-                                         <img src="img/testimonial/testi_avatar_02.png" alt="img">
-                                    </div>
-                                </div>
-                               <div class="single-testimonial">
-                                    <h3>Best hotel to say</h3>
-                                    <p>“ One of the clearest ways that a hotel can stand out from the competition and wow potential guests. ”</p>
-                                     <div class="testi-author">                                        
-                                        <div class="ta-info">
-                                            <h6>Tromazo Zelson</h6>
-                                            <span>designer</span>
-                                        </div>
-                                         <img src="img/testimonial/testi_avatar_03.png" alt="img">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                       
-                    </div>
-                </div>
-            </section>
-
-
-            <!-- testimonial-area-end -->
-
-
-           
-          
                <!-- newslater-area -->
             <section class="newslater-area">
                 <div class="container p-relative">

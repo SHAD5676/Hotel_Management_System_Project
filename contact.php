@@ -41,44 +41,19 @@
                                           <ul>
                                             <li class="has-sub">
                                                 <a href="index.php">Home</a>
-                                                <ul>													
-													<li><a href="index.php">Home Page 01</a></li>
-													<li><a href="index-2.php">Home Page 02</a></li>	
-												</ul>
+                                               
                                             </li>
                                             <li><a href="about.php">About</a></li>        
                                             <li class="has-sub">
                                                 <a href="room.php">our rooms</a>
-                                                <ul>													
-													<li> <a href="room.php">Our Rooms</a></li>
-                                                    <li> <a href="single-rooms.php">Rooms Details</a></li>
-												</ul>
+                                                
                                             </li>     
                                             <li class="has-sub">
                                                 <a href="services.php">Facilities</a>
-                                                <ul>													
-													<li> <a href="services.php">Services</a></li>
-                                                    <li> <a href="single-service.php">Services Details</a></li>
-												</ul>
+                                               
                                             </li>  
-                                              <li class="has-sub"><a href="#">Pages</a>
-												<ul>
-                                                    <li><a href="projects.php">Gallery</a></li>
-                                                    <li><a href="faq.php">Faq</a></li>
-                                                    <li><a href="team.php">Team</a></li>
-                                                    <li><a href="team-single.php">Team Details</a></li>
-                                                    <li><a href="pricing.php">Pricing</a></li>
-                                                    <li><a href="shop.php">Shop</a></li>
-													<li><a href="shop-details.php">Shop Details</a>
-                                                  </ul>
-											</li>
-                                            <li class="has-sub"> 
-                                                <a href="blog.php">Blog</a>
-                                                <ul>
-                                                    <li><a href="blog.php">Blog</a></li>
-                                                    <li><a href="blog-details.php">Blog Details</a></li>
-                                                </ul>
-                                            </li>
+                                              
+                                           
                                             <li><a href="contact.php">Contact</a></li>                                               
                                         </ul>
                                     </nav>

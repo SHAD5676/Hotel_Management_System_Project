@@ -31,7 +31,7 @@
                         <div class="row align-items-center">
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo">
-                                    <a href="index.html"><img src="img/logo/logo.png" alt="logo"></a>
+                                    <a href="index.php"><img src="img/logo/logo.png" alt="logo"></a>
                                 </div>
                             </div>
                            <div class="col-xl-8 col-lg-8">
@@ -40,52 +40,27 @@
                                     <nav id="mobile-menu">
                                           <ul>
                                             <li class="has-sub">
-                                                <a href="index.html">Home</a>
-                                                <ul>													
-													<li><a href="index.html">Home Page 01</a></li>
-													<li><a href="index-2.html">Home Page 02</a></li>	
-												</ul>
+                                                <a href="index.php">Home</a>
+                                                
                                             </li>
-                                            <li><a href="about.html">About</a></li>        
+                                            <li><a href="about.php">About</a></li>        
                                             <li class="has-sub">
-                                                <a href="room.html">our rooms</a>
-                                                <ul>													
-													<li> <a href="room.html">Our Rooms</a></li>
-                                                    <li> <a href="single-rooms.html">Rooms Details</a></li>
-												</ul>
+                                                <a href="room.php">our rooms</a>
+                                                
                                             </li>     
                                             <li class="has-sub">
-                                                <a href="services.html">Facilities</a>
-                                                <ul>													
-													<li> <a href="services.html">Services</a></li>
-                                                    <li> <a href="single-service.html">Services Details</a></li>
-												</ul>
+                                                <a href="services.php">Facilities</a>
+                                               
                                             </li>  
-                                              <li class="has-sub"><a href="#">Pages</a>
-												<ul>
-                                                    <li><a href="projects.html">Gallery</a></li>
-                                                    <li><a href="faq.html">Faq</a></li>
-                                                    <li><a href="team.html">Team</a></li>
-                                                    <li><a href="team-single.html">Team Details</a></li>
-                                                    <li><a href="pricing.html">Pricing</a></li>
-                                                    <li><a href="shop.html">Shop</a></li>
-													<li><a href="shop-details.html">Shop Details</a>
-                                                  </ul>
-											</li>
-                                            <li class="has-sub"> 
-                                                <a href="blog.html">Blog</a>
-                                                <ul>
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="blog-details.html">Blog Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="contact.html">Contact</a></li>                                               
+                                              
+                                            
+                                            <li><a href="contact.php">Contact</a></li>                                               
                                         </ul>
                                     </nav>
                                 </div>
                             </div>   
                              <div class="col-xl-2 col-lg-2 d-none d-lg-block">
-                                 <a href="contact.html" class="top-btn mt-10 mb-10">reservation </a>
+                                 <a href="contact.php" class="top-btn mt-10 mb-10">reservation </a>
                             </div>
                             
                                 <div class="col-12">
@@ -110,7 +85,7 @@
                               
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                        <li class="breadcrumb-item"><a href="index.php">Home</a></li>
                                         <li class="breadcrumb-item active" aria-current="page">Service</li>
                                     </ol>
                                 </nav>
@@ -123,140 +98,7 @@
                 </div>
             </section>
             <!-- breadcrumb-area-end -->
-			  <!-- service-details2-area -->
-            <section id="service-details2" class="pt-120 pb-90 p-relative">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <div class="section-title center-align mb-50">
-                                <h5>why choose us</h5>
-                                <h2>
-                                  Why <span>choose us</span>
-                                </h2>                                
-                            </div>                           
-                        </div>
-                        <div class="col-xl-8 col-lg-8">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6">
-                                <div class="services-08-item mb-70">                                    
-                                    <div class="services-08-thumb">
-                                     <img src="img/icon/fe-icon01.png" alt="img">
-                                    </div>
-                                    <div class="services-08-content">
-                                        <h3><a href="single-service.html"> Restaurants</a></h3>
-                                        <p>Visitors to your city need to eat. In fact, some people visit new towns specifically for the food. Use your insider</p>
-                                    </div>
-                                </div>
-                            </div>
-                               <div class="col-lg-6 col-md-6">
-                               <div class="services-08-item mb-70">                                                 
-                                    <div class="services-08-thumb">
-                                        <img src="img/icon/fe-icon02.png" alt="img">
-                                    </div>
-                                    <div class="services-08-content">
-                                        <h3><a href="single-service.html">Luxury Room</a></h3>
-                                       <p>Visitors to your city need to eat. In fact, some people visit new towns specifically for the food. Use your insider</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6">
-                               <div class="services-08-item mb-70">                                        
-                                    <div class="services-08-thumb">
-                                     <img src="img/icon/fe-icon03.png" alt="img">
-                                    </div>
-                                    <div class="services-08-content">
-                                        <h3><a href="single-service.html">Entertainment</a></h3>
-                                      <p>Visitors to your city need to eat. In fact, some people visit new towns specifically for the food. Use your insider</p>
-                                    </div>
-                                </div>
-                            </div>
-                          <div class="col-lg-6 col-md-6">
-                             <div class="services-08-item mb-70">                        
-                                    <div class="services-08-thumb">
-                                     <img src="img/icon/fe-icon04.png" alt="img">
-                                    </div>
-                                    <div class="services-08-content">
-                                        <h3><a href="single-service.html">Pool Area</a></h3>
-                                        <p>Visitors to your city need to eat. In fact, some people visit new towns specifically for the food. Use your insider</p>
-                                    </div>
-                                </div>
-                            </div>
-                              <div class="col-lg-6 col-md-6">
-                                  <div class="services-08-item mb-70">                           
-                                    <div class="services-08-thumb">
-                                   <img src="img/icon/fe-icon05.png" alt="img">
-                                    </div>
-                                    <div class="services-08-content">
-                                        <h3><a href="single-service.html">Cocktail Bar</a></h3>
-                                       <p>Visitors to your city need to eat. In fact, some people visit new towns specifically for the food. Use your insider</p>
-                                    </div>
-                                </div>
-                            </div>
-                             <div class="col-lg-6 col-md-6">
-                               <div class="services-08-item mb-70">                        
-                                    <div class="services-08-thumb">
-                                     <img src="img/icon/fe-icon06.png" alt="img">
-                                    </div>
-                                    <div class="services-08-content">
-                                        <h3><a href="single-service.html">Tour Guide</a></h3>
-                                        <p>Visitors to your city need to eat. In fact, some people visit new towns specifically for the food. Use your insider</p>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>        
-                        </div>
-                        
-                    </div>
-                </div>
-            </section>
-            <!-- service-details2-area-end -->
-             <!-- counter-area -->
-            <div class="counter-area p-relative wow fadeInDown animated" data-animation="fadeInDown" data-delay=".4s">
-                <div class="container">
-               
-                    <div class="row p-relative align-items-center">
-                         <div class="col-lg-4 col-md-6 col-sm-12">
-                             <div class="single-counter text-center">
-                                <div class="counter p-relative">                                   
-                                    <div class="text">
-                                          <span class="count">90</span><span>K</span>                               
-                                        <p>Guest Have Stayed at Our Hotel</p>
-                                    </div>
-                                    
-                                </div>
-                               
-                            </div>
-                        </div>
-                      <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="single-counter text-center">
-                                <div class="counter p-relative">                                   
-                                    <div class="text">
-                                          <span class="count">152</span><span>+</span>                               
-                                        <p>Guest Have Stayed at Our Hotel</p>
-                                    </div>
-                                    
-                                </div>
-                               
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                              <div class="single-counter text-center">
-                                    <div class="counter p-relative">                                
-                                    <div class="text">
-                                        <span class="count">221</span><span>+</span>     
-                                          <p>Our Luxurious Services Rooms</p>
-                                    </div>
-                                    
-                                </div>
-                                
-                              
-                            </div>
-                        </div>                        
-                    </div>
-                </div>
-            </div>
-            <!-- counter-area-end -->	
-
+			 
              <!-- booking-area -->
             <section class="booking pt-120 pb-120 p-relative fix">
                 <div class="container">

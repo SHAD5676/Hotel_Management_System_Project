@@ -27,30 +27,9 @@ $currentPage = basename($_SERVER['PHP_SELF']);
                   </li>
                   <li class="has-sub <?= ($currentPage == 'services.php' || $currentPage == 'single-service.php') ? 'active' : '' ?>">
                     <a href="services.php">Facilities</a>
-                    <ul>
-                      <li class="<?= ($currentPage == 'services.php') ? 'active' : '' ?>"> <a href="services.php">Services</a></li>
-                      <li class="<?= ($currentPage == 'single-service.php') ? 'active' : '' ?>"> <a href="single-service.php">Services Details</a></li>
-                    </ul>
+                    
                   </li>
-                  <li class="has-sub <?= in_array($currentPage, ['projects.php', 'faq.php', 'team.php', 'team-single.php', 'pricing.php', 'shop.php', 'shop-details.php']) ? 'active' : '' ?>">
-                    <a href="#">Pages</a>
-                    <ul>
-                      <li class="<?= ($currentPage == 'projects.php') ? 'active' : '' ?>"><a href="projects.php">Gallery</a></li>
-                      <li class="<?= ($currentPage == 'faq.php') ? 'active' : '' ?>"><a href="faq.php">Faq</a></li>
-                      <li class="<?= ($currentPage == 'team.php') ? 'active' : '' ?>"><a href="team.php">Team</a></li>
-                      <li class="<?= ($currentPage == 'team-single.php') ? 'active' : '' ?>"><a href="team-single.php">Team Details</a></li>
-                      <li class="<?= ($currentPage == 'pricing.php') ? 'active' : '' ?>"><a href="pricing.php">Pricing</a></li>
-                      <li class="<?= ($currentPage == 'shop.php') ? 'active' : '' ?>"><a href="shop.php">Shop</a></li>
-                      <li class="<?= ($currentPage == 'shop-details.php') ? 'active' : '' ?>"><a href="shop-details.php">Shop Details</a></li>
-                    </ul>
-                  </li>
-                  <li class="has-sub <?= ($currentPage == 'blog.php' || $currentPage == 'blog-details.php') ? 'active' : '' ?>">
-                    <a href="blog.php">Blog</a>
-                    <ul>
-                      <li class="<?= ($currentPage == 'blog.php') ? 'active' : '' ?>"><a href="blog.php">Blog</a></li>
-                      <li class="<?= ($currentPage == 'blog-details.php') ? 'active' : '' ?>"><a href="blog-details.php">Blog Details</a></li>
-                    </ul>
-                  </li>
+                 
                   <li class="<?= ($currentPage == 'contact.php') ? 'active' : '' ?>"><a href="contact.php">Contact</a></li>
                 </ul>
               </nav>
