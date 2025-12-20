@@ -1,46 +1,50 @@
 <?php
-// delete_booking.php
 include_once('db_config.php');
 session_start();
 
-// Check if user is logged in
+// Auth check
 if (!isset($_SESSION['username'])) {
-  header('Location: index.php');
-  exit;
+    header('Location: index.php');
+    exit;
 }
 
-// Validate booking ID from GET
+// Validate booking ID
 if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
-  $_SESSION['error'] = "Invalid category ID.";
-  header('Location: categories.php');
-  exit;
+    $_SESSION['error'] = "Invalid booking ID.";
+    header('Location: booking.php');
+    exit;
 }
 
-$category_id = intval($_GET['id']);
+$booking_id = (int) $_GET['id'];
 
-// Optional: Check if any room uses this category to prevent deletion
-$stmt_check = $conn->prepare("SELECT * FROM `bookings` WHERE 1");
+
+// Check if booking exists
+$stmt_check = $conn->prepare(
+    "SELECT booking_id FROM bookings WHERE booking_id = ?"
+);
 $stmt_check->bind_param("i", $booking_id);
 $stmt_check->execute();
-$result_check = $stmt_check->get_result();
-$row_check = $result_check->fetch_assoc();
+$result = $stmt_check->get_result();
 
-if ($row_check['total'] > 0) {
-  $_SESSION['error'] = "Cannot delete this category because there are rooms assigned to it.";
-  $stmt_check->close();
-  header('Location: booking.php');
-  exit;
+if ($result->num_rows === 0) {
+    $_SESSION['error'] = "Booking not found.";
+    $stmt_check->close();
+    header('Location: booking.php');
+    exit;
 }
 $stmt_check->close();
 
-// Delete the category
-$stmt = $conn->prepare("DELETE FROM booking_categories WHERE booking_id = ?");
-$stmt->bind_param("i", $category_id);
+
+// Delete booking
+$stmt = $conn->prepare(
+    "DELETE FROM bookings WHERE booking_id = ?"
+);
+$stmt->bind_param("i", $booking_id);
 
 if ($stmt->execute()) {
-  $_SESSION['success'] = "Category deleted successfully.";
+    $_SESSION['success'] = "Booking deleted successfully.";
 } else {
-  $_SESSION['error'] = "Failed to delete the category.";
+    $_SESSION['error'] = "Failed to delete booking.";
 }
 
 $stmt->close();

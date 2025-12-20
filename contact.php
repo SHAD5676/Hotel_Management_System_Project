@@ -76,7 +76,7 @@
         <main>
             
             <!-- breadcrumb-area -->
-            <section class="breadcrumb-area d-flex align-items-center" style="background-image:url(images/30.jpg)">
+            <section class="breadcrumb-area d-flex align-items-center" style="background-image:url(images/46.jpg)">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-xl-12 col-lg-12">
@@ -88,7 +88,7 @@
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
                                         <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">About</li>
+                                        <li class="breadcrumb-item active" aria-current="page">Contact</li>
                                     </ol>
                                 </nav>
                             </div>

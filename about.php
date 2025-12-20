@@ -78,7 +78,7 @@
         <main>
             
             <!-- breadcrumb-area -->
-            <section class="breadcrumb-area d-flex align-items-center" style="background-image:url(images/42.jpg)">
+            <section class="breadcrumb-area d-flex align-items-center" style="background-image:url(images/8.jpg)">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-xl-12 col-lg-12">
@@ -89,7 +89,7 @@
                               
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                        <li class="breadcrumb-item"><a href="index.php">Home</a></li>
                                         <li class="breadcrumb-item active" aria-current="page">About</li>
                                     </ol>
                                 </nav>
@@ -153,9 +153,11 @@
                     <div class="row justify-content-center align-items-center">
                          <div class="col-lg-12 col-md-12 col-sm-12">
                             <div class="s-about-img p-relative  wow fadeInUp animated" data-animation="fadeInUp" data-delay=".4s">
-                                <a href="https://www.youtube.com/watch?v=gyGsPlt06bo" class="popup-video"> <img src="images/9.jpg" alt="img">   </a>
+                                <div style="text-align: center;">
+                                <a href="https://www.youtube.com/watch?v=gyGsPlt06bo" class="popup-video"> <img src="images/54.jpg" alt="img"> 
+                            </a> </div> 
                                <div class="about-icon">
-                                     <img src="images/images (19).jpeg" alt="img">   
+                                     <img src="" alt="img">   
                                 </div>
                             </div>
                           
@@ -164,8 +166,7 @@
                 </div>
             </section>
             <!-- about-area-end -->
-            
-           
+                    
                <!-- newslater-area -->
             <section class="newslater-area">
                 <div class="container p-relative">

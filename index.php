@@ -50,7 +50,7 @@
             </div>
             <!-- slider-info-area-end -->
             <div class="slider-active" style="background: #101010;">
-                <div class="single-slider slider-bg d-flex align-items-center" style="background-image: url(images/45.jpg); background-size: cover;">
+                <div class="single-slider slider-bg d-flex align-items-center" style="background-image: url(images/43.jpg); background-size: cover;">
                     <div class="container">
                         <div class="row justify-content-center align-items-center">
 

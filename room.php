@@ -37,7 +37,7 @@ session_start();
   <!-- main-area -->
   <main>
     <!-- breadcrumb-area -->
-    <section class="breadcrumb-area d-flex align-items-center" style="background-image:url(images/pool.jpg)">
+    <section class="breadcrumb-area d-flex align-items-center" style="background-image:url(images/63.jpg)">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-xl-12 col-lg-12">
@@ -61,6 +61,7 @@ session_start();
       </div>
     </section>
 
+    <h1 style="text-align: center; margin-top: 50px;">Our Rooms</h1>
 
 
     <section class="room-cards py-5">

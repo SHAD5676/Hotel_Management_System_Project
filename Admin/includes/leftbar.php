@@ -70,14 +70,14 @@
         <li class="nav-item">
           <a href="user.php" class="nav-link">
             <i class="nav-icon fas fa-user-cog"></i>
-            <p>Users/Stuffs</p>
+            <p>Users/Staffs</p>
           </a>
         </li>
 
          <li class="nav-item">
           <a href="booking.php" class="nav-link">
             <i class="nav-icon fas fa-calendar-alt"></i>
-            <p>Bookings</p>
+            <p>Bills</p>
           </a>
         </li>
 

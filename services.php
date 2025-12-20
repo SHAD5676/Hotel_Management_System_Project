@@ -74,7 +74,7 @@
         <!-- header-end -->
         <main>
             <!-- breadcrumb-area -->
-            <section class="breadcrumb-area d-flex align-items-center" style="background-image:url(images/27.jpg);">
+            <section class="breadcrumb-area d-flex align-items-center" style="background-image:url(images/67.jpg);">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-xl-12 col-lg-12">
@@ -98,83 +98,10 @@
                 </div>
             </section>
             <!-- breadcrumb-area-end -->
-			 
-             <!-- booking-area -->
-            <section class="booking pt-120 pb-120 p-relative fix">
-                <div class="container">
-                    <div class="row align-items-center">
-                         <div class="col-lg-6 col-md-12">
-                             <div class="booking-img">
-                                 <img src="img/bg/booking-img.png" alt="img">
-                                 <div class="text">
-                                    <h3>Seasonal or <span>Citywide Events</span></h3>
-                                     <p>What big annual or seasonal events are can’t-miss?</p>
-                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12">
-                             <div class="contact-bg02 pl-40 pr-30">
-                                <div class="section-title center-align">
-                                    <h2>
-                                      Book Your <span>Seat</span>
-                                    </h2>
-                                </div>                                
-                                <form action="mail.php" method="post" class="contact-form mt-30">
-                                    <div class="row">
-                                    <div class="col-lg-12 col-md-12">
-                                        <div class="contact-field p-relative c-name mb-20">                                    
-                                           <label>Check In Date</label>
-                                            <input type="date" id="chackin2" name="date">
-                                        </div>                               
-                                    </div>
+			<div></div>
 
-                                     <div class="col-lg-12 col-md-12">
-                                        <div class="contact-field p-relative c-subject mb-20">                                   
-                                           <label>Check Out Date</label>
-                                            <input type="date" id="chackout2" name="date">
-                                        </div>
-                                    </div>		
-                                     <div class="col-lg-12 col-md-12">
-                                        <div class="contact-field p-relative c-subject mb-20">                                   
-                                             <label>Adults</label>
-                                                <select name="adults" id="adu2">
-                                                  <option value="sports-massage">Adults</option>
-                                                  <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                </select>
-                                        </div>
-                                    </div>	
-                                     <div class="col-lg-12 col-md-12">
-                                        <div class="contact-field p-relative c-option mb-20">                                   
-                                            <label>Room</label>
-                                               <select name="room" id="rm2">
-                                                  <option value="sports-massage">Room</option>
-                                                  <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="slider-btn mt-30">                                          
-                                                    <button class="btn active" data-animation="fadeInRight" data-delay=".8s"><span>Book Table Now</span></button>				
-                                                </div>                             
-                                    </div>
-                                    </div>
-                            </form>                            
-                            </div>  
-                                             
-                        </div>
-                       
-                    </div>
-                </div>
-            </section>
-            <!-- booking-area-end -->	
+            <h1 style="text-align: center; margin-top: 50px;">Our Services</h1>
+
              <!-- service-area -->
             <section class="service-area pb-120 p-relative fix" style="background: #2C45490F;">
                 <div class="container">
@@ -185,26 +112,26 @@
                                         <li>
                                             <div class="s-link">
                                                  <div class="text"><a href="single-service.html"><h3><i class="fal fa-long-arrow-right"></i> Cafe & Wine Bar</h3> <span>Start from <b>$150</b></span></a></div>
-                                                    <div class="layer img-hover"><img src="img/bg/sr-img-01.png" alt="shape"></div>
+                                                    <div class="layer img-hover"><img src="images/56.jpg" alt="shape"></div>
                                             </div>
                                            
                                         </li>  
                                        <li>
                                             <div class="s-link active">
                                            <div class="text"> <a href="single-service.html"><h3><i class="fal fa-long-arrow-right"></i> Spa & Wellness</h3> <span>Start from <b>$100</b></span></a></div>
-                                            <div class="layer img-hover"><img src="img/bg/sr-img-02.png" alt="shape"></div>
+                                            <div class="layer img-hover"><img src="images/65.jpg" alt="shape"></div>
                                            </div>
                                         </li>  
                                        <li>
                                            <div class="s-link">
                                                <div class="text"> <a href="single-service.html"><h3><i class="fal fa-long-arrow-right"></i> Restaurant</h3> <span>Start from <b>$130</b></span></a></div>
-                                               <div class="layer img-hover"><img src="img/bg/sr-img-03.png" alt="shape"></div>
+                                               <div class="layer img-hover"><img src="images/63.jpg" alt="shape"></div>
                                            </div>
                                         </li>  
                                       <li>
                                           <div class="s-link">
                                                <div class="text"><a href="single-service.html"><h3><i class="fal fa-long-arrow-right"></i> Meetings & Events</h3> <span>Start from <b>$140</b></span></a></div>
-                                               <div class="layer img-hover"><img src="img/bg/sr-img-04.png" alt="shape"></div>
+                                               <div class="layer img-hover"><img src="images/2.jpg" alt="shape"></div>
                                           </div>
                                         </li>  
                                    </ul>
