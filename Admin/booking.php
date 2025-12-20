@@ -36,7 +36,7 @@ if(isset($_SESSION['success'])){
 <table class="table table-bordered">
 <thead>
 <tr>
-<th>#</th>
+<th>ID</th>
 <th>Room</th>
 <th>Customer ID</th>
 <th>Check In</th>

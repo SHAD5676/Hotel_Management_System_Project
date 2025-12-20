@@ -56,7 +56,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="check.php" class="nav-link">
+          <a href="check_out.php" class="nav-link">
             <i class="nav-icon fas fa-door-open"></i>
             <p>Check Out</p>
           </a>
@@ -74,13 +74,20 @@
           </a>
         </li>
 
+         <li class="nav-item">
+          <a href="booking.php" class="nav-link">
+            <i class="nav-icon fas fa-calendar-alt"></i>
+            <p>Bookings</p>
+          </a>
+        </li>
+
         <!-- Services -->
-      
-          <li class="nav-item">
-             <a href="service_new.php" class="nav-link">
-              <i class="nav-icon fas fa-chart-pie"></i>
-              <p>Services</p>
-            </a>
+
+        <li class="nav-item">
+          <a href="service_new.php" class="nav-link">
+            <i class="nav-icon fas fa-chart-pie"></i>
+            <p>Services</p>
+          </a>
           
       </ul>
       </li>

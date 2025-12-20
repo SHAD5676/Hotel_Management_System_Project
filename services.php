@@ -74,7 +74,7 @@
         <!-- header-end -->
         <main>
             <!-- breadcrumb-area -->
-            <section class="breadcrumb-area d-flex align-items-center" style="background-image:url(img/bg/bdrc-bg.jpg);">
+            <section class="breadcrumb-area d-flex align-items-center" style="background-image:url(images/27.jpg);">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-xl-12 col-lg-12">
@@ -217,48 +217,7 @@
             </section>
             <!-- service-area-end -->	
               <!-- instagram-area -->
-            <section  class="instagram-area p-relative fix pt-120 pb-120">                
-                <div class="container-fluid">                   
-                     <div class="row">
-                        <div class="col-lg-2 col-sm-6">
-                            <div class="instagram-box">
-                                 <img src="img/bg/ins-img-01.png" alt="img">
-                                <div class="hover"><a href="#"><img src="img/icon/instagram-icon.png" alt="img"></a></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-sm-6">
-                            <div class="instagram-box">
-                                 <img src="img/bg/ins-img-02.png" alt="img">
-                                <div class="hover"><a href="#"><img src="img/icon/instagram-icon.png" alt="img"></a></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-sm-6">
-                            <div class="instagram-box">
-                                 <img src="img/bg/ins-img-03.png" alt="img">
-                                 <div class="hover"><a href="#"><img src="img/icon/instagram-icon.png" alt="img"></a></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-sm-6">
-                            <div class="instagram-box">
-                                 <img src="img/bg/ins-img-04.png" alt="img">
-                                <div class="hover"><a href="#"><img src="img/icon/instagram-icon.png" alt="img"></a></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-sm-6">
-                            <div class="instagram-box">
-                                 <img src="img/bg/ins-img-05.png" alt="img">
-                                 <div class="hover"><a href="#"><img src="img/icon/instagram-icon.png" alt="img"></a></div>
-                            </div>
-                        </div>
-                       <div class="col-lg-2 col-sm-6">
-                            <div class="instagram-box">
-                                 <img src="img/bg/ins-img-06.png" alt="img">
-                                 <div class="hover"><a href="#"><img src="img/icon/instagram-icon.png" alt="img"></a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+           
             <!-- instagram-area-end -->
            <!-- newslater-area -->
             <section class="newslater-area">

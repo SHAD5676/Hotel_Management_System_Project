@@ -78,7 +78,7 @@
         <main>
             
             <!-- breadcrumb-area -->
-            <section class="breadcrumb-area d-flex align-items-center" style="background-image:url(images/10.jpg)">
+            <section class="breadcrumb-area d-flex align-items-center" style="background-image:url(images/42.jpg)">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-xl-12 col-lg-12">
@@ -116,7 +116,7 @@
                             <div class="about-content s-about-content  wow fadeInRight  animated pl-60" data-animation="fadeInRight" data-delay=".4s">
                                 <div class="section-title second-title pb-25">  
                                     <h5>About Us</h5>
-                                    <h2>Most Safe & Rated Hotel <span>In London.</span></h2>                                   
+                                    <h2>Most Safe & Rated Hotel.</h2>                                   
                                 </div>
                                    <p>Morbi tortor urna, placerat vel arcu quis, fringilla egestas neque. Morbi sit amet porta erat, quis rutrum risus. Vivamus et gravida nibh, quis posuere felis. In commodo mi lectus, Integer ligula lorem, finibus vitae lorem vitae tincidunt dolor consequat quis.</p>
                                    
@@ -153,9 +153,9 @@
                     <div class="row justify-content-center align-items-center">
                          <div class="col-lg-12 col-md-12 col-sm-12">
                             <div class="s-about-img p-relative  wow fadeInUp animated" data-animation="fadeInUp" data-delay=".4s">
-                                <a href="https://www.youtube.com/watch?v=gyGsPlt06bo" class="popup-video"> <img src="img/features/about.jpg" alt="img">   </a>
+                                <a href="https://www.youtube.com/watch?v=gyGsPlt06bo" class="popup-video"> <img src="images/9.jpg" alt="img">   </a>
                                <div class="about-icon">
-                                     <img src="images/12.jpg" alt="img">   
+                                     <img src="images/images (19).jpeg" alt="img">   
                                 </div>
                             </div>
                           
@@ -165,44 +165,7 @@
             </section>
             <!-- about-area-end -->
             
-            <!-- feature-area -->
-            <section class="feature-area2 p-relative pt-120 pb-120 fix" style="background: #2C4549;">              
-                <div class="container-fluid">
-                    <div class="row justify-content-center align-items-center">
-                         <div class="col-lg-12 col-md-12 col-sm-12 pr-30">
-                           <div class="feature-slider-active">                               
-                               <div class="feature-slider-box">                                   
-                                    <img src="images/13jpg" alt="contact-bg-an-01">
-                                    <div class="text">
-                                        <h2>Minimal Duplex Room /</h2>
-                                    </div>
-                               </div>                          
-                               <div class="feature-slider-box">                                   
-                                    <img src="images/13" alt="contact-bg-an-01">
-                                    <div class="text">
-                                        <h2>wifi bed water house /</h2>
-                                    </div>
-                               </div>
-                           
-                               <div class="feature-slider-box">                                   
-                                    <img src="images/14" alt="contact-bg-an-01">
-                                    <div class="text">
-                                        <h2>free wifi zone /</h2>
-                                    </div>
-                               </div>
-                             
-                               <div class="feature-slider-box">                                   
-                                    <img src="images/15" alt="contact-bg-an-01">
-                                    <div class="text">
-                                        <h2>wifi bed water house /</h2>
-                                    </div>
-                               </div>
-                            </div>
-                        </div>
-					 
-                    </div>
-                </div>
-            </section>
+           
                <!-- newslater-area -->
             <section class="newslater-area">
                 <div class="container p-relative">

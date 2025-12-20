@@ -76,7 +76,7 @@
         <main>
             
             <!-- breadcrumb-area -->
-            <section class="breadcrumb-area d-flex align-items-center" style="background-image:url(img/bg/bdrc-bg.jpg)">
+            <section class="breadcrumb-area d-flex align-items-center" style="background-image:url(images/30.jpg)">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-xl-12 col-lg-12">

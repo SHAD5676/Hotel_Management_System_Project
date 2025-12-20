@@ -9,8 +9,8 @@ if (!isset($_SESSION['username'])) {
 
 $message = '';
 
-// Check if ID is provided
-if (!isset($_GET['id'])) {
+// Check if category ID is provided
+if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
     header('location:view_categories.php');
     exit;
 }
@@ -18,7 +18,10 @@ if (!isset($_GET['id'])) {
 $id = (int) $_GET['id'];
 
 // Fetch existing category data
-$result = $conn->query("SELECT * FROM room_categories WHERE category_id  = $id");
+$stmt = $conn->prepare("SELECT category_id, category_name, price, details FROM room_categories WHERE category_id = ?");
+$stmt->bind_param("i", $id);
+$stmt->execute();
+$result = $stmt->get_result();
 
 if ($result->num_rows == 0) {
     header('location:view_categories.php');
@@ -27,19 +30,28 @@ if ($result->num_rows == 0) {
 
 $category = $result->fetch_assoc();
 
-// Update category
+// Handle update form submission
 if (isset($_POST['submit'])) {
-    $category_name = $conn->real_escape_string($_POST['category_name']);
-    $price = $conn->real_escape_string($_POST['price']);
-    $details = $conn->real_escape_string($_POST['details']);
+    $category_name = trim($_POST['category_name']);
+    $price = trim($_POST['price']);
+    $details = trim($_POST['details']);
 
     if (!empty($category_name) && !empty($price)) {
-        $sql = "UPDATE room_categories 
-                SET category_name='$category_name', price='$price', details='$details' 
-                WHERE id=$id";
 
-        if ($conn->query($sql)) {
+        // Use prepared statement to prevent SQL injection
+        $updateStmt = $conn->prepare(
+            "UPDATE room_categories 
+             SET category_name = ?, price = ?, details = ? 
+             WHERE category_id = ?"
+        );
+        $updateStmt->bind_param("sdsi", $category_name, $price, $details, $id);
+
+        if ($updateStmt->execute()) {
             $message = "<div class='alert alert-success'>Category updated successfully!</div>";
+            // Refresh category data
+            $category['category_name'] = $category_name;
+            $category['price'] = $price;
+            $category['details'] = $details;
         } else {
             $message = "<div class='alert alert-danger'>Error: {$conn->error}</div>";
         }
@@ -56,15 +68,12 @@ if (isset($_POST['submit'])) {
     <meta charset="utf-8">
     <title>Admin | Edit Category</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
     <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="dist/css/adminlte.min.css">
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
-
         <?php include("includes/navbar.php"); ?>
         <?php include("includes/leftbar.php"); ?>
 
