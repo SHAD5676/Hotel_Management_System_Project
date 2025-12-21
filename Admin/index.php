@@ -10,7 +10,7 @@ if (isset($_SESSION['username'])) {
 
 // Handle login submission
 if (isset($_POST['submit'])) {
-  $email = $_POST['email'] ?? '';
+  $email = $_POST['username'] ?? '';
   $password = md5($_POST['password'] ?? '');
 
   $sql = "SELECT * FROM users WHERE username = ? AND password = ?";
@@ -63,7 +63,7 @@ if (isset($_POST['submit'])) {
 
         <form action="" method="post">
           <div class="input-group mb-3">
-            <input type="email" name="email" class="form-control" placeholder="Email" required>
+            <input type="email" name="username" class="form-control" placeholder="Email" required>
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-envelope"></span>

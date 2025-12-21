@@ -411,7 +411,7 @@
                     </div>
                     <div class="col-lg-2 col-sm-6">
                         <div class="instagram-box">
-                            <img src="images/images (18).jpeg" alt="img">
+                            <img src="images/29.jpeg" alt="img">
                             <div class="hover"><a href="#"><img src="img/icon/instagram-icon.png" alt="img"></a></div>
                         </div>
                     </div>

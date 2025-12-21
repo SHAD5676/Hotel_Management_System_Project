@@ -75,7 +75,7 @@
         </li>
 
          <li class="nav-item">
-          <a href="booking.php" class="nav-link">
+          <a href="bills.php" class="nav-link">
             <i class="nav-icon fas fa-calendar-alt"></i>
             <p>Bills</p>
           </a>
